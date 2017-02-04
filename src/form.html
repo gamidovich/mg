@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GREEN VALLEY</title>
+</head>
+<body>
+
+	<header class="main-header">
+		<div class="main-header__inner">
+			<a href="#" class="logo"><img src="#" alt=""></a>
+			<nav class="main-nav">
+				<ul class="main-nav-list">
+					<li class="main-nav__item"><a href="#" class="main-nav__link">НОМЕРА</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">КОТТЕДЖ</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">РЕСТОРАН</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">ОТДЫХ</a></li>
+					<li class="main-nav__item"><a href="#" class="main-nav__link">КОНТАКТЫ</a></li>
+				</ul>
+				<span class="main-nav__burger"></span>
+			</nav>
+			<div class="main-header__contacts">
+				<a href="+79650617878" class="main-header__phone">+7 812 777-55-88</a>
+				<div class="main-header__address">г. Санкт-Петербург, Приморское ш.600</div>
+			</div>
+			<a href="#" class="btn  btn--orange">ЗАБРОНИРОВАТЬ</a>
+		</div>		
+	</header>
+
+	<main>
+		<form action="#">
+			<div class="form-inner">
+				<h2 class="title">Эконом</h2>
+				<p class="form__description">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <span class="form__description-num-color">+7 812 777-55-88</span></p>
+			</div>
+			<div class="form-date">
+				<div class="form-inner">
+					<p class="form-date__step">Шаг 1</p>
+					<h3 class="title  title--h3">Дата отдыха</h3>	
+					<div class="form-period">
+						<div class="form-period__entry">
+							<p class="form-period__title">ДАТА ВЪЕЗДА</p>
+							<input type="number" size="2" name="number-entry" value="" placeholder="ДД">	
+							<input type="number" size="2" name="month-entry" value="" placeholder="ММ">
+							<input type="number" size="4" name="year-entry" value="" placeholder="ГГГГ">
+						</div>
+						<div class="form-period__exit">
+							<p class="form-period__title">ДАТА ВЫЕЗДА</p>
+							<input type="number" size="2" name="number-exit" placeholder="ДД">
+							<input type="number" size="2" name="month-exit" placeholder="ММ">
+							<input type="number" size="4" name="year-exit" placeholder="ГГГГ">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-place">
+				<div class="form-inner">
+					<p class="form-date__step">Шаг 2</p>
+					<h3 class="title  title--h3">Место проживания</h3>
+					<div class="form-place__list">
+						<div class="form-place__item">
+							<label for="hotel">ОТЕЛЬ</label>
+							<input type="checkbox" name="form-place__item" id="hotel" value="Отель">
+						</div>
+						<div class="form-place__item">
+							<label for="cottage">КОТТЕДЖ</label>
+							<input type="checkbox" name="form-place__item" id="cottage" value="Коттедж" checked>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="form-type">
+				<div class="form-inner">
+					<p class="form-date__step">Шаг 3</p>
+					<h3 class="title  title--h3">Тип коттеджа</h3>
+					<div class="form-type__menu">
+						<div class="form-type__menu-item">
+							<label for="flagman">ФЛАГМАН</label>
+							<input type="radio" name="cottage" id="flagman" value="Флагман" checked>
+							<label for="ozerniy">ОЗЁРНЫЙ</label>
+							<input type="radio" name="cottage" id="ozerniy" value="Озерный">
+							<label for="olxovka">ОЛЬХОВКА</label>
+							<input type="radio" name="cottage" id="olxovka" value="Ольховка">
+							<label for="portoviy">ПОРТОВЫЙ</label>
+							<input type="radio" name="cottage" id="portoviy" value="Портовый">
+						</div>
+					</div>
+					<div class="form-type__sub-menu">
+						<ul class="form-submenu__list-flagman">
+							<li class="form-submenu__item-flagman"></li>
+							<li class="form-submenu__item-flagman"></li>
+							<li class="form-submenu__item-flagman"></li>
+							<li class="form-submenu__item-flagman"></li>
+							<li class="form-submenu__item-flagman"></li>
+						</ul>
+					</div>
+					<div class="form-type__sub-menu">
+						<ul class="form-submenu__list-ozerniy">
+							<li class="form-submenu__item-ozerniy"></li>
+							<li class="form-submenu__item-ozerniy"></li>
+							<li class="form-submenu__item-ozerniy"></li>
+							<li class="form-submenu__item-ozerniy"></li>
+							<li class="form-submenu__item-ozerniy"></li>
+						</ul>
+					</div>
+					<div class="form-type__sub-menu">
+						<ul class="form-submenu__list-olxovka">
+							<li class="form-submenu__item-olxovka"></li>
+							<li class="form-submenu__item-olxovka"></li>
+							<li class="form-submenu__item-olxovka"></li>
+							<li class="form-submenu__item-olxovka"></li>
+							<li class="form-submenu__item-olxovka"></li>
+						</ul>
+					</div>
+					<div class="form-type__sub-menu">
+						<ul class="form-submenu__list-portoviy">
+							<li class="form-submenu__item-portoviy"></li>
+							<li class="form-submenu__item-portoviy"></li>
+							<li class="form-submenu__item-portoviy"></li>
+							<li class="form-submenu__item-portoviy"></li>
+							<li class="form-submenu__item-portoviy"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="form-information">
+				<div class="form-inner">
+					<p class="form-date__step">Шаг 4</p>
+					<h3 class="title  title--h3">Персональная информация</h3>
+					<input type="text" placeholder="ИМЯ">
+					<input type="text" placeholder="ФАМИЛИЯ">
+					<input type="text" id="tel" placeholder="НОМЕР ТЕЛЕФОНА">
+					<label for="tel">Мы свяжемся с вами в случае необходимости</label>
+					<input type="text" id="email" placeholder="E-MAIL">
+					<label for="email">На этот адрес мы вышлем вам подтверждение о забронированном номере</label>
+				</div>
+			</div>
+			<div class="form-payment">
+				<div class="form-inner">
+					<p class="form-date__step">Шаг 5</p>
+					<h3 class="title  title--h3">Способы оплаты</h3>
+					<div class="form-payment-list">
+						<div class="payment__info"></div>
+						<div class="payment__cash">
+							<div class="payment__cash-radio">
+								<input type="radio" name="payment" id="cash">
+								<label for="cash">ПО ПРИЕЗДУ</label>
+							</div>
+							<div class="payment__cash-info">Вы можете произвести оплату по факту заселения</div>
+						</div>
+						<div class="payment-card">
+							<div class="payment__cash">
+								<div class="payment__cart-info">
+									<div class="payment__cash-radio">
+										<input type="radio" name="payment" id="cash">
+										<label for="cash">СЕЙЧАС</label>
+									</div>
+									<div class="payment__cash-info">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</div>
+								</div>
+								<label for="num-cart">НОМЕР КАРТЫ</label>
+								<input type="text" id="num-cart" placeholder="0000-0000-0000-0000">
+
+								<label for="num-cvv">НОМЕР CVV</label>
+								<input type="text" id="num-cvv" placeholder="123">
+
+								<label for="fi">ФАМИЛИЯ ВЛАДЕЛЬЦА КАРТЫ</label>
+								<input type="text" id="fi" placeholder="VLADIMIR VLADIMIROV">
+
+								<label for="valid">ДЕЙСТВУЕТ ДО</label>
+								<input type="text" id="valid" placeholder="01 / 2018">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<input type="submit" value="ЗАБРОНИРОВАТЬ">
+		</form>
+	</main>
+
+	<footer class="main-footer">
+		<div class="main-footer__inner">
+			<div class="main-footer__address">г. Санкт-Петербург Приморское шоссе</div>
+			<div class="main-footer__links">
+				<a href="#" class="logo"><img src="#" alt=""></a>
+				<div class="social-list">
+					<a href="#" class="social-item  social-item--vk" title=""></a>
+					<a href="#" class="social-item  social-item--inst" title=""></a>
+					<a href="#" class="social-item  social-item--fb" title=""></a>
+				</div>	
+			</div>
+			<div class="main-footer__contacts">
+				<p class="main-footer__contacts-tel">+7 812 777-55-88</p>
+				<p class="main-footer__contacts-mail">info@greenvalley.ru</p>
+			</div>
+		</div>		
+	</footer>	
+
+</body>
+</html>	
