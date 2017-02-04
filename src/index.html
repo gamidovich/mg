@@ -4,38 +4,53 @@
 	<meta charset="UTF-8">
 	<title>GREEN VALLEY</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|PT+Serif+Caption&amp;subset=cyrillic" rel="stylesheet">
+  <link href="//code.cdn.mozilla.net/fonts/fira.css" rel="stylesheet" type="text/css" />
+	<script src="https://use.fontawesome.com/9741d393d6.js"></script>
+	<script>
+			window.onload = function() {
+				var toggler = document.getElementById('toggler');
+				toggler.onclick = function(e){
+				  e.preventDefault();
+				  toggler.classList.toggle('toggler--close');
+				  document.getElementById('main-nav').classList.toggle('header-nav__list--visible');
+				}
+			}
+	</script>
 </head>
 <body>
 
 	<header class="header">
 		<div class="header__inner">
-			<a href="#" class="logo"><img src="#" alt=""></a>
+			<a href="index.html" class="logo"><img src="img/pic/logo.png" alt=""></a>
+			<a href="#top" id="toggler" class="header-nav__burger">
+				<i class="fa fa-bars fa-2x header-nav__burger-icon"></i>
+			</a>
 			<nav class="header-nav">
-				<ul class="header-nav__list">
-					<li class="header-nav__item"><a href="#" class=""header-nav__link">НОМЕРА</a></li>
-					<li class="header-nav__item"><a href="#" class=""header-nav__link">КОТТЕДЖ</a></li>
-					<li class="header-nav__item"><a href="#" class=""header-nav__link">РЕСТОРАН</a></li>
-					<li class="header-nav__item"><a href="#" class=""header-nav__link">ОТДЫХ</a></li>
-					<li class="header-nav__item"><a href="#" class=""header-nav__link">КОНТАКТЫ</a></li>
+				<ul id="main-nav" class="header-nav__list">
+					<li class="header-nav__item"><a href="#" class="header-nav__link" name="top">НОМЕРА</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">КОТТЕДЖ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">РЕСТОРАН</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">ОТДЫХ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">КОНТАКТЫ</a></li>
 				</ul>
-				<span class="header-nav__burger"></span>
 			</nav>
 			<div class="header-contacts">
-				<a class="header-contacts__phone" href="+79650617878">+7 812 777-55-88</a>
+				<a class="header-contacts__phone" href="tel:+79650617878">+7 812 777-55-88</a>
 				<div class="header-contacts__address">г. Санкт-Петербург, Приморское ш.600</div>
 			</div>
 			<a href="#" class="btn  btn--orange">ЗАБРОНИРОВАТЬ</a>
 		</div>
 	</header>
 
-	<div class="promo">
-		<div class="promo__inner">
-			<h2 class="promo__title">Семейный отдых на берегу финского залива</h2>
-			<p class="promo__text">Green Valley - это современная база отдыха в курортном районе для здарового отдыха всей семьей.</p>
-		</div>
-	</div>
-
 	<main>
+
+		<div class="promo">
+			<div class="promo__inner">
+				<h2 class="promo__title">Семейный отдых на берегу финского залива</h2>
+				<p class="promo__text">Green Valley - это современная база отдыха в курортном районе для здарового отдыха всей семьей.</p>
+			</div>
+		</div>
 
 		<div class="recreation">
 			<div class="recreation__inner">
@@ -47,12 +62,12 @@
 					<h2 class="title title--recreation">Здоровый отдых</h2>
 					<p class="recreation__text">Плавайте в бассейне, играйте в воллейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
 					<ul class="recreation__list">
-						<li class="recreation__item"><a href="#" title="">БАССЕЙН</a></li>
-						<li class="recreation__item"><a href="#" title="">СПОРТИВНАЯ ПЛОЩАДКА</a></li>
-						<li class="recreation__item"><a href="#" title="">БИЛЬЯРД</a></li>
-						<li class="recreation__item"><a href="#" title="">СПА</a></li>
-						<li class="recreation__item"><a href="#" title="">БАНИ</a></li>
-						<li class="recreation__item"><a href="#" title="">АНИМАЦИЯ</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">БАССЕЙН</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">СПОРТИВНАЯ ПЛОЩАДКА</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">БИЛЬЯРД</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">СПА</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">БАНИ</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">АНИМАЦИЯ</a></li>
 					</ul>
 				</div>
 				<div class="recreation-gallery"></div>
