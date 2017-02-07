@@ -1,56 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>GREEN VALLEY</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link href="//code.cdn.mozilla.net/fonts/fira.css" rel="stylesheet" type="text/css" />
-	<script src="https://use.fontawesome.com/9741d393d6.js"></script>
-	<script>
-			window.onload = function() {
-				var toggler = document.getElementById('toggler');
-				toggler.onclick = function(e){
-				  e.preventDefault();
-				  toggler.classList.toggle('toggler--close');
-				  document.getElementById('main-nav').classList.toggle('header-nav__list--visible');
-				}
-			}
-	</script>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>GREEN VALLEY</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="//code.cdn.mozilla.net/fonts/fira.css" rel="stylesheet" type="text/css" />
+		<script src="https://use.fontawesome.com/9741d393d6.js"></script>
 
-	<header class="header">
-		<div class="header__inner">
-			<a href="index.html" class="logo"><img src="img/pic/logo.png" alt=""></a>
-			<a href="#top" id="toggler" class="header-nav__burger">
-				<i class="fa fa-bars fa-2x header-nav__burger-icon"></i>
-			</a>
-			<nav class="header-nav">
-				<ul id="main-nav" class="header-nav__list">
-					<li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link--active" name="top">НОМЕРА</a></li>
-					<li class="header-nav__item"><a href="#" class="header-nav__link">КОТТЕДЖ</a></li>
-					<li class="header-nav__item"><a href="#" class="header-nav__link">РЕСТОРАН</a></li>
-					<li class="header-nav__item"><a href="#" class="header-nav__link">ОТДЫХ</a></li>
-					<li class="header-nav__item"><a href="#" class="header-nav__link">КОНТАКТЫ</a></li>
-				</ul>
-			</nav>
-			<div class="header-contacts">
-				<a class="header-contacts__phone" href="tel:+79650617878">+7 812 777-55-88</a>
-				<div class="header-contacts__address">г. Санкт-Петербург, Приморское ш.600</div>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__inner">
+				<a href="index.html" class="logo"><img src="img/pic/logo.png" alt=""></a>
+				<a href="#top" id="toggler" class="header-nav__burger">
+					<i class="fa fa-bars fa-2x header-nav__burger-icon"></i>
+				</a>
+				<nav class="header-nav">
+					<ul id="main-nav" class="header-nav__list">
+						<li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link--active" name="top">НОМЕРА</a></li>
+						<li class="header-nav__item"><a href="#" class="header-nav__link">КОТТЕДЖ</a></li>
+						<li class="header-nav__item"><a href="#" class="header-nav__link">РЕСТОРАН</a></li>
+						<li class="header-nav__item"><a href="#" class="header-nav__link">ОТДЫХ</a></li>
+						<li class="header-nav__item"><a href="#" class="header-nav__link">КОНТАКТЫ</a></li>
+					</ul>
+				</nav>
+				<div class="header-contacts">
+					<a class="header-contacts__phone" href="tel:+79650617878">+7 812 777-55-88</a>
+					<div class="header-contacts__address">г. Санкт-Петербург, Приморское ш.600</div>
+				</div>
+				<a href="#" class="btn  btn--orange">ЗАБРОНИРОВАТЬ</a>
 			</div>
-			<a href="#" class="btn  btn--orange">ЗАБРОНИРОВАТЬ</a>
-		</div> 
-	</header>
-
-	<main>
-
+		</header>
+		<main>
 		<div class="promo">
 			<div class="promo__inner">
 				<h2 class="promo__title">Семейный отдых на берегу финского залива</h2>
 				<p class="promo__text">Green Valley - это современная база отдыха в курортном районе для здарового отдыха всей семьей.</p>
 			</div>
 		</div>
-
 		<div class="recreation">
 			<div class="recreation__inner">
 				<ul class="recreation__list">
@@ -72,7 +59,6 @@
 				<div class="recreation-gallery"></div>
 			</div>
 		</div>
-
 		<div class="reviews">
 			<div class="reviews__inner">
 				<h2 class="title title-reviews">Отзывы</h2>
@@ -107,11 +93,9 @@
 				<a class="btn btn--reviews" href="#" title="">Все отзывы</a>
 			</div>
 		</div>
-
 		<div class="offers">
 			<div class="offers__inner"></div>
 		</div>
-
 		<div class="get">
 			<div class="get__inner">
 				<div class="get__map"></div>
@@ -132,7 +116,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="resting-place">
 			<div class="resting-place__inner">
 				<h2 class="title title--resting">Где вы хотите отдохнуть?</h2>
@@ -158,25 +141,24 @@
 				</div>
 			</div>
 		</div>
-	</main>
-
-	<footer class="main-footer">
-		<div class="main-footer__inner">
-			<div class="main-footer__address">г. Санкт-Петербург Приморское шоссе</div>
-			<div class="main-footer__links">
-				<a href="#" class="logo"><img src="#" alt=""></a>
-				<div class="social-list">
-					<a href="#" class="social-item  social-item--vk" title=""></a>
-					<a href="#" class="social-item  social-item--inst" title=""></a>
-					<a href="#" class="social-item  social-item--fb" title=""></a>
+		</main>
+		<footer class="main-footer">
+			<div class="main-footer__inner">
+				<div class="main-footer__address">г. Санкт-Петербург Приморское шоссе</div>
+				<div class="main-footer__links">
+					<a href="#" class="logo"><img src="#" alt=""></a>
+					<div class="social-list">
+						<a href="#" class="social-item  social-item--vk" title=""></a>
+						<a href="#" class="social-item  social-item--inst" title=""></a>
+						<a href="#" class="social-item  social-item--fb" title=""></a>
+					</div>
+				</div>
+				<div class="main-footer__contacts">
+					<p class="main-footer__contacts-tel">+7 812 777-55-88</p>
+					<p class="main-footer__contacts-mail">info@greenvalley.ru</p>
 				</div>
 			</div>
-			<div class="main-footer__contacts">
-				<p class="main-footer__contacts-tel">+7 812 777-55-88</p>
-				<p class="main-footer__contacts-mail">info@greenvalley.ru</p>
-			</div>
-		</div>
-	</footer>
-
-</body>
+		</footer>
+		<script src="js/script.min.js"></script>
+	</body>
 </html>
