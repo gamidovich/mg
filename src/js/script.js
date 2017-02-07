@@ -11,5 +11,4 @@ $(document).ready(function(){
 		'FiraSans', 'PTSerifRegular',                      // название шрифта
 		'/css/font.css?v=1'  // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
 		);
-				alert(111);
 });
