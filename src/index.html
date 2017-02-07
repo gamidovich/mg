@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GREEN VALLEY</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="//code.cdn.mozilla.net/fonts/fira.css" rel="stylesheet" type="text/css" />
+	<script src="https://use.fontawesome.com/9741d393d6.js"></script>
+	<script>
+			window.onload = function() {
+				var toggler = document.getElementById('toggler');
+				toggler.onclick = function(e){
+				  e.preventDefault();
+				  toggler.classList.toggle('toggler--close');
+				  document.getElementById('main-nav').classList.toggle('header-nav__list--visible');
+				}
+			}
+	</script>
+</head>
+<body>
+
+	<header class="header">
+		<div class="header__inner">
+			<a href="index.html" class="logo"><img src="img/pic/logo.png" alt=""></a>
+			<a href="#top" id="toggler" class="header-nav__burger">
+				<i class="fa fa-bars fa-2x header-nav__burger-icon"></i>
+			</a>
+			<nav class="header-nav">
+				<ul id="main-nav" class="header-nav__list">
+					<li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link--active" name="top">НОМЕРА</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">КОТТЕДЖ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">РЕСТОРАН</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">ОТДЫХ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">КОНТАКТЫ</a></li>
+				</ul>
+			</nav>
+			<div class="header-contacts">
+				<a class="header-contacts__phone" href="tel:+79650617878">+7 812 777-55-88</a>
+				<div class="header-contacts__address">г. Санкт-Петербург, Приморское ш.600</div>
+			</div>
+			<a href="#" class="btn  btn--orange">ЗАБРОНИРОВАТЬ</a>
+		</div> 
+	</header>
+
+	<main>
+
+		<div class="promo">
+			<div class="promo__inner">
+				<h2 class="promo__title">Семейный отдых на берегу финского залива</h2>
+				<p class="promo__text">Green Valley - это современная база отдыха в курортном районе для здарового отдыха всей семьей.</p>
+			</div>
+		</div>
+
+		<div class="recreation">
+			<div class="recreation__inner">
+				<ul class="recreation__list">
+					<li class="recreation__item"><a href="#">СЕМЕЙНЫЙ ОТДЫХ</a></li>
+					<li class="recreation__item"><a href="#">КОРПОРАТИВНЫЙ</a></li>
+				</ul>
+				<div class="recreation__content">
+					<h2 class="title title--recreation">Здоровый отдых</h2>
+					<p class="recreation__text">Плавайте в бассейне, играйте в воллейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
+					<ul class="recreation__list">
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">БАССЕЙН</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">СПОРТИВНАЯ ПЛОЩАДКА</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">БИЛЬЯРД</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">СПА</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">БАНИ</a></li>
+						<li class="recreation__item"><a class="recreation__link" href="#" title="">АНИМАЦИЯ</a></li>
+					</ul>
+				</div>
+				<div class="recreation-gallery"></div>
+			</div>
+		</div>
+
+		<div class="reviews">
+			<div class="reviews__inner">
+				<h2 class="title title-reviews">Отзывы</h2>
+				<ul class="reviews__list">
+					<li class="reviews__item">
+						<div class="reviews__pic">
+							<img src="" alt="">
+						</div>
+						<blockquote class="reviews__blockquote">
+							<cite class="reviews__cite reviews__cite--vk">Екатерина В.</cite>
+							<p>Наша семья счастлива, что открыла для себя Green Valley. Замечательный комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями.</p>
+						</blockquote>
+						<div class="reviews__date">
+							<p>Дата отдыха</p>
+							<p>01.06.2015 - 08.06.2015</p>
+						</div>
+					</li>
+					<li class="reviews__item">
+						<div class="reviews__img">
+							<img src="" alt="">
+						</div>
+						<blockquote class="reviews__blockquote">
+							<cite class="reviews__cite reviews__cite--fb">Екатерина В.</cite>
+							<p>Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведенные у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось все: теплый прием персонала.</p>
+						</blockquote>
+						<div class="reviews__date">
+							<p>Дата отдыха</p>
+							<p>15.05.2015 - 20.05.2015</p>
+						</div>
+					</li>
+				</ul>
+				<a class="btn btn--reviews" href="#" title="">Все отзывы</a>
+			</div>
+		</div>
+
+		<div class="offers">
+			<div class="offers__inner"></div>
+		</div>
+
+		<div class="get">
+			<div class="get__inner">
+				<div class="get__map"></div>
+				<div class="get__transport">
+					<div class="get__transport-bus">
+						<p class="get__transport-title get__transport-title--bus">АВТОБУСЫ</p>
+						<p class="get__transport-text">
+							№ 211 от станции метро "Черная речка" до остановки санатория "Репино"
+							№ 305ЛК от станции метро "Старая деревня"
+							№ 608К от станции метро "Проспект Просвещения"
+							№ 400К от станции метро "Площадь Ленина"
+						</p>
+					</div>
+					<div class="get__transport-train">
+						<p class="get__transport-title get__transport-title--train">ЭЛЕКТРОПОЕЗД</p>
+						<p class="get__transport-text">Электропоезд Выборгсокого направления от Финляндского вокзала Санкт-Петербурга до платформы "Репино"</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="resting-place">
+			<div class="resting-place__inner">
+				<h2 class="title title--resting">Где вы хотите отдохнуть?</h2>
+				<div class="categories-list">
+					<div class="categories__item">
+						<div class="categories__pic">
+							<img src="" alt="">
+						</div>
+						<div class="categories__price">
+							<p class="categories__title">В отеле</p>
+							<p class="room__price">от <span class="price__color">4000</span> РУБ./СУТКИ</p>
+						</div>
+					</div>
+					<div class="categories__item">
+						<div class="categories__pic">
+							<img src="" alt="">
+						</div>
+						<div class="categories__price">
+							<p class="categories__title">Коттедже</p>
+							<p class="room__price">от <span class="price__color">6800</span> РУБ./СУТКИ</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="main-footer">
+		<div class="main-footer__inner">
+			<div class="main-footer__address">г. Санкт-Петербург Приморское шоссе</div>
+			<div class="main-footer__links">
+				<a href="#" class="logo"><img src="#" alt=""></a>
+				<div class="social-list">
+					<a href="#" class="social-item  social-item--vk" title=""></a>
+					<a href="#" class="social-item  social-item--inst" title=""></a>
+					<a href="#" class="social-item  social-item--fb" title=""></a>
+				</div>
+			</div>
+			<div class="main-footer__contacts">
+				<p class="main-footer__contacts-tel">+7 812 777-55-88</p>
+				<p class="main-footer__contacts-mail">info@greenvalley.ru</p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
