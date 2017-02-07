@@ -1,12 +1,31 @@
 .header-nav {
+	font-size: @font-size-sm;
+	
+	&__list {
+		display: flex;
+		list-style-type: none;
+	}
+
+    &__item {
+		margin-right: 20px;
+	}
+
+	&__link:link,
+	&__link:visited {
+  		color: @gray-darken;
+  		text-decoration: none;
+
+  	}
+
+  	&__link:hover {
+		color: @secondary-color;
+	}
+
+	&__link--active {
+		border-bottom: 2px solid @secondary-color;	
+	}
 
 
-  .header-nav__list {
+	&__burger {}
 
-
-
-      &--visible {
-        display: block;
-      }
-  }
 }

@@ -150,7 +150,7 @@ gulp.task('js', function () {
 
 // ЗАДАЧА: Кодирование в base64 шрифта в формате WOFF
 gulp.task('css:fonts:woff', function (callback) {
-  let fontCssPath = dirs.source + '/fonts/font_opensans_woff.css'; // с каким исходным файлом работаем
+  let fontCssPath = dirs.source + '/fonts/FiraSansMedium/FiraSansMedium.css'; // с каким исходным файлом работаем
   if(fileExist(fontCssPath) !== false) { // если исходный файл существует, продолжим
     return gulp.src(fontCssPath)
       .pipe(plumber({ errorHandler: onError }))
