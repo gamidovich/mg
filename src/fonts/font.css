@@ -11,3 +11,12 @@
     font-style: normal;
     font-weight: 600;
 }
+
+@font-face {
+    font-family: "PTSerifRegular";
+    src: url("PTSerifRegular.woff") format("woff");
+    font-style: normal;
+    font-weight: 200;
+}
+
+
