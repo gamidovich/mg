@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>GREEN VALLEY</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="//code.cdn.mozilla.net/fonts/fira.css" rel="stylesheet" type="text/css" />
+	<script src="https://use.fontawesome.com/9741d393d6.js"></script>
 </head>
 <body>
 
@@ -124,14 +127,22 @@
 				</div>
 			</div>
 			<div class="form-information">
-				<div class="form-inner">
+				<div class="form__inner">
 					<p class="form-date__step">Шаг 4</p>
 					<h3 class="title  title--h3">Персональная информация</h3>
-					<input type="text" placeholder="ИМЯ">
-					<input type="text" placeholder="ФАМИЛИЯ">
-					<input type="text" id="tel" placeholder="НОМЕР ТЕЛЕФОНА">
+					<div class="form-information__item">
+						<input class="form-information__input" type="text" placeholder="ИМЯ">
+					</div>
+					<div class="form-information__item">
+						<input class="form-information__input" type="text" placeholder="ФАМИЛИЯ">
+					</div>
+					<div class="form-information__item">
+						<input class="form-information__input" type="text" id="tel" placeholder="НОМЕР ТЕЛЕФОНА">
+					</div>
 					<label for="tel">Мы свяжемся с вами в случае необходимости</label>
-					<input type="text" id="email" placeholder="E-MAIL">
+					<div class="form-information__item">
+						<input class="form-information__input" type="text" id="email" placeholder="E-MAIL">
+					</div>
 					<label for="email">На этот адрес мы вышлем вам подтверждение о забронированном номере</label>
 				</div>
 			</div>
@@ -139,8 +150,14 @@
 				<div class="form-inner">
 					<p class="form-date__step">Шаг 5</p>
 					<h3 class="title  title--h3">Способы оплаты</h3>
-					<div class="form-payment-list">
-						<div class="payment__info"></div>
+					<div class="form-payment__list">
+						<div class="form-payment__info">
+							<div class="form-payment__info-inner">
+								<div class="form-payment__title">К ОПЛАТЕ</div>
+								<div class="form-payment__price">14 000 РУБ.</div>
+								<div class="form-payment__description"><i class="fa fa-exclamation-circle fa-1 fa-exclamation-circle-pos" aria-hidden="true"></i>Пожалуйста, <a class="form-payment__link" href="#" title="">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате.</div>
+							</div>
+						</div>
 						<div class="payment__cash">
 							<div class="payment__cash-radio">
 								<input type="radio" name="payment" id="cash">

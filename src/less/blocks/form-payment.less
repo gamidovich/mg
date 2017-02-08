@@ -1,0 +1,53 @@
+.form-payment {
+
+	font-family: @font-family-2;
+	color: @gray-dark;
+
+	&__info {
+		display: table;
+		width: 280px;
+		height: 350px;
+		border: 1px solid @gray-lighten;
+	}
+
+	&__info-inner {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 20px;
+	}
+	
+	&__title {
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: @font-weight-normal;
+		font-size: @font-size-sm;
+
+	}
+
+	&__price {
+		text-align: center;
+		font-weight: @font-weight-medium;
+		font-size: @font-size-lg-x;
+	}
+
+	&__description {
+		font-size: @font-size-sm;
+		font-weight: @font-weight-normal;
+		text-align: justify;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: @gray-dark;
+		border-bottom: 1px dashed @gray-darken;
+	}
+
+	&__link:hover {
+		border-bottom: none;
+	}
+
+	.fa-exclamation-circle-pos {
+		margin-right: 6px;
+		color: #e71818;
+	}	
+}
