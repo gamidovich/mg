@@ -1,15 +1,29 @@
 .recreation {
+	background-image: url("@{pic}recreation.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
+	&__inner {
+		padding: 60px 35px 100px 35px;
+	}
+	
   &__list {
 
     &__item {}
   }
 
   &__content {
-
-    &__list {
-
-      &__recreation__item {}
-    }
+  	text-align: center;
   }
+
+  &__text {
+  	padding-top: 40px;
+  }
+
+  &__list {
+	display: none;
+
+  	&__recreation__item {}
+   }
 }

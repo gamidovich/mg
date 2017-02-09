@@ -1,13 +1,28 @@
 .categories-list {
+	font-family: @font-family-1;
+	font-weight: @font-weight-normal;
+	text-align: center;
 
-  .categories__item {
+	&__item {
+		margin: 20px;
+		background-color: #fff;
+		border: 1px solid #1ea590;
+	}
 
-    .categories__pic {}
-    .categories__price {
+	&__price {
+		padding: 46px 66px 50px 66px;	
+	}
 
-        &__title {}
-        .room__price {}
-    }
+	&__title {		
+		font-size: @font-size-lg-xx;		
+	}
 
-  }
+	.room__price {
+		font-size: @font-size-sm;
+		font-weight: @font-weight-medium;
+	}
+
+	.price__number { color: @secondary-color; }
+
 }
+

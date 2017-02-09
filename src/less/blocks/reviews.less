@@ -1,19 +1,52 @@
 .reviews {
+  padding: 68px 0 48px 0;
+  font-family: @font-family-2;
+  font-weight: @font-weight-normal;
+  font-size: @font-size-sm;
+  background-image: url("@{pic}reviewsbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-  &__list {
-
-    &__item {
-
-      &__pic {}
-      &__blockquote {
-
-        &__cite {}
-        &__cite--vk {}
-      }
-
-      &__date {}
-    }
+  &__inner {
+    text-align: center;
   }
+ 
+  .title--reviews {
+    padding-bottom: 56px;
+    color: #fff;
+  }
+
+  &__list { 
+
+    background-color: #fff;
+
+    
+  }
+
+&__item {    
+  padding: 0 46px 30px 46px;
+}
+    &__pic-item {
+      margin-top: -25px;
+      border: 2px solid #fff;
+}
+
+  &__blockquote p{
+    font-size: @font-size-base;
+    font-style: normal;
+
+      &__cite--vk {}
+  }
+
+  &__cite {
+    font-weight: @font-weight-medium;
+    font-style: normal;
+  }
+
+  &__date p {
+    font-size: @font-size-sm;
+  }      
 
   .btn--reviews {}
 }

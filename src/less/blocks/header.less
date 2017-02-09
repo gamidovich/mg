@@ -1,13 +1,16 @@
 .header {
-
+  position: relative;
+  text-align: center;
+  z-index: 0;
 
   &__inner {
-    position: relative;
 
     .header-nav__burger {
       position: absolute;
-      top: 0;
+      top: 6px;
       right: 0;
+      padding: 22px;
+      z-index: 1;
     } 
 
   }
@@ -20,5 +23,9 @@
         color: #ff7435;
       }
     }
+  }
+
+  &-contacts {
+    display: none;
   }
 }
