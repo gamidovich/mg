@@ -6,20 +6,31 @@
 	background-repeat: no-repeat;
 	background-position: 0 50%;
 
-	&__inner {
-		padding: 10px 20px;
-		background-color: #fff;	
+	@media (min-width: 768px) {
+		text-align: left;
 	}
 
-  &__title {
-  	margin-bottom: 20px;
-	line-height: @line-height-lg;
-	
-  }
+	&__inner {
 
-  &__text {
-  	font-family: @font-family-2;
-  	font-weight: @font-weight-normal;
-  	line-height: @line-height-lg;
-  }
+		padding: 10px 20px;
+		background-color: #fff;
+
+		@media (min-width: 768px) {
+    		width: 720px;
+    		margin: 0 auto;      
+  		}
+
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		line-height: @line-height-lg;		
+	  }
+
+	&__text {
+	  	font-family: @font-family-2;
+	  	font-weight: @font-weight-normal;
+	  	line-height: @line-height-lg;
+	}
+
 }

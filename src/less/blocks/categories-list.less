@@ -2,11 +2,26 @@
 	font-family: @font-family-1;
 	font-weight: @font-weight-normal;
 	text-align: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+	
 
 	&__item {
-		margin: 20px;
+		margin: 20px 0;
 		background-color: #fff;
 		border: 1px solid #1ea590;
+
+		@media (min-width: 768px) {			
+			width: 50%;
+			margin-right: 0;
+		}
+	}
+
+	&__item:last-child {
+		@media (min-width: 768px) {
+			margin-right: 0;
+		}
 	}
 
 	&__price {

@@ -1,18 +1,15 @@
 .recreation {
-	background-image: url("@{pic}recreation.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+    background-image: url("@{pic}recreation.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-	&__inner {
-		padding: 60px 35px 100px 35px;
+
+	 &__inner {
+		  padding: 60px 35px 100px 35px;
 	}
 	
-  &__list {
-
-    &__item {}
-  }
-
+  
   &__content {
   	text-align: center;
   }
@@ -22,8 +19,25 @@
   }
 
   &__list {
-	display: none;
+	   display: none;
 
-  	&__recreation__item {}
+     @media (min-width: 768px) {
+      list-style-type: none;
+      font-weight: @font-weight-medium;
+      font-size: @font-size-sm;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+     }
    }
+
+    &__item {
+
+      @media (min-width: 768px) {
+        width: 90px;
+        margin: 0 46px;
+        text-align: center;
+     }
+  }
 }

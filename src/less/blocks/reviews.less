@@ -10,6 +10,12 @@
 
   &__inner {
     text-align: center;
+
+    @media (min-width: 768px) {
+      width: 480px;
+      margin: 0 auto;
+    }
+
   }
  
   .title--reviews {
@@ -18,14 +24,26 @@
   }
 
   &__list { 
-
-    background-color: #fff;
-
-    
+    list-style-type: none;  
   }
 
-&__item {    
+&__item { 
+     
   padding: 0 46px 30px 46px;
+
+  background-color: #fff;
+
+  @media (min-width: 768px) {
+    margin-bottom: 54px;
+    border: 1px solid #18ac93;
+  }
+}
+
+&__item:last-child {
+
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
     &__pic-item {
       margin-top: -25px;
