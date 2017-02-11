@@ -4,17 +4,30 @@
 	&__list {
 		list-style-type: none;
 
+
 		&--close { display: none; }
 
 		&--visible { display: block; }
+
+		@media(min-width: 1200px) {
+			display: flex;
+		}
 	}
 
     &__item {
-		border-bottom: 1px solid @gray-lighten;		
+		border-bottom: 1px solid @gray-lighten;	
+
+		@media (min-width: 1200px) {
+			border: none;
+		}	
 	}
 
 	&__item:first-child {
 		border-top: 1px solid @gray-lighten;
+
+		@media (min-width: 1200px) {
+			border: none;
+		}
 	}
 
 	&__link:link,

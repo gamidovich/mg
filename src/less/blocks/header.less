@@ -4,6 +4,14 @@
   z-index: 0;
 
   &__inner {
+
+    @media (min-width: 1200px) {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+    }
     
     .header-nav__burger {
       position: absolute;
@@ -11,6 +19,11 @@
       right: 0;
       padding: 22px;
       z-index: 1;
+
+      @media (min-width: 1200px) {
+        display: none;
+      }
+
     } 
 
   }
@@ -24,9 +37,14 @@
       }
     }
   }
+  
 
-  &-contacts {
+  &__contacts {
     display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
   }
 
 

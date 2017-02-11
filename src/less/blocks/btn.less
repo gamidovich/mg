@@ -1,5 +1,4 @@
 .btn {
-  display: none;
   font-size: @font-size-sm;
   font-weight: @font-weight-medium;
   text-decoration: none;
@@ -9,16 +8,26 @@
   padding: 11px 32px;
   outline: none;
   cursor: pointer;
+
+
 }
 
-.btn-orange {
+.btn--delete {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
+}
+
+.btn--orange {
   .btn();
   background-color: @secondary-color;
   border-radius: 20px; 
 }
 
 .btn-icon {
-  .btn-orange();
+  .btn--orange();
   padding-left: 0;
 }
 
@@ -26,7 +35,7 @@
   margin: 0 10px 0 20px;
 }
 
-.btn-orange:hover,
+.btn--orange:hover,
 .btn-icon:hover {
   background-color: @primary-color;
 }
