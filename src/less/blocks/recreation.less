@@ -12,7 +12,19 @@
   
   &__content {
   	text-align: center;
+    display: none;
+
+    #family:checked ~ &--family {
+        display: block; 
+    }
+
+    #corporate:checked ~ &--corporate {
+        display: block; 
+    }
+
   }
+
+
 
   &__text {
   	padding-top: 40px;
