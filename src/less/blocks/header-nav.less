@@ -4,7 +4,6 @@
 	&__list {
 		list-style-type: none;
 
-
 		&--close { display: none; }
 
 		&--visible { display: block; }
@@ -15,11 +14,13 @@
 	}
 
     &__item {
+ 
 		border-bottom: 1px solid @gray-lighten;	
 
 		@media (min-width: 1200px) {
 			border: none;
-		}	
+		}
+
 	}
 
 	&__item:first-child {
@@ -28,23 +29,37 @@
 		@media (min-width: 1200px) {
 			border: none;
 		}
+
 	}
+
 
 	&__link:link,
 	&__link:visited {
 		display: block;
-		padding-right: 20px;
   		color: @gray-darken;
   		text-align: center;
   		text-decoration: none;
+  		padding: 34px 10px;
   	}
 
   	&__link:hover {
 		color: @secondary-color;
 	}
 
-	&__link--active-1 {
+	&__link--active-1:link,
+	&__link--active-1:visited {
 		color: @secondary-color;
-		background-image: url(img/pic/active-1.jpg);	
+		background-image: url(../img/pic/active-1.jpg);	
+		background-repeat: no-repeat;
+		background-position: center 60px;
 	}
+
+	&__link--active-2:link,
+	&__link--active-2:visited {
+		color: @secondary-color;
+		background-image: url(../img/pic/active-2.jpg);	
+		background-repeat: no-repeat;
+		background-position: center 60px;	
+	}
+
 }
