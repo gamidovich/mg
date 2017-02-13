@@ -1,11 +1,10 @@
 .categories-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	font-family: @font-family-1;
 	font-weight: @font-weight-normal;
-	text-align: center;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-	
+	text-align: center;	
 
 	&__item {
 		margin: 20px 0;
@@ -13,15 +12,27 @@ justify-content: center;
 		border: 1px solid #1ea590;
 
 		@media (min-width: 768px) {			
-			width: 50%;
-			margin-right: 0;
+			width: 48%;
+			margin-right: 2%;
 		}
 	}
 
 	&__item:last-child {
+
 		@media (min-width: 768px) {
 			margin-right: 0;
 		}
+	}
+
+	&__pic {
+		
+		height: 200px;
+		overflow: hidden;
+	}
+
+	&__pic img {
+		width: 100%;
+		height: 100%;
 	}
 
 	&__price {
