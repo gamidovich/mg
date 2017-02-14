@@ -41,12 +41,26 @@
 
   &__contacts {
     display: none;
-
+    text-align: left;
+    color: @gray-darken;
     @media (min-width: 1200px) {
       display: block;
     }
   }
 
+&__phone {
+  font-family: @font-family-3;
+  font-size: @font-size-lg;
+  font-weight: @font-weight-lg;
+  text-decoration: none;
+  color: @gray-darken;
+}
 
+&__address {
+  font-family: @font-family-2;
+  font-size: @font-size-sm;
+  font-weight: @font-weight-bold;
+
+}
 
 }

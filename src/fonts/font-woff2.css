@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "FiraSans2";
+    src: url("Fira-Sans.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "FiraSans";
+    src: url("Fira-Sans-Medium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "PTSerifRegular";
+    src: url("PT-Serif.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "PTSerifCaptionRegular";
+    src: url("PT-Serif-Caption.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "PTSans-Caption";
+    src: url("PTSans-Caption-Web-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "PTSans-Caption";
+    src: url("PTSans-Caption-Web-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
