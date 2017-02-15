@@ -1,8 +1,7 @@
 .reviews {
   padding: 68px 0 48px 0;
   font-family: @font-family-2;
-  font-weight: @font-weight-normal;
-  font-size: @font-size-sm;
+  font-weight: @font-weight-regular;
   background-image: url("@{pic}reviewsbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,50 +15,97 @@
       margin: 0 auto;
     }
 
+    @media (min-width: 1200px) {
+      width: 977px;
+    }
+
   }
  
   .title--reviews {
     padding-bottom: 56px;
     color: #fff;
+    font-weight: @font-weight-regular;
   }
 
-  &__list { 
-    list-style-type: none;  
+  &__list {
+    // padding-bottom: 50px;
+    list-style-type: none;
+       margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }  
   }
 
 &__item { 
-     
+  font-size: @font-size-sm;
   padding: 0 46px 30px 46px;
-
   background-color: #fff;
+  margin-bottom: 45px;
+
 
   @media (min-width: 768px) {
-    margin-bottom: 54px;
-    border: 1px solid #18ac93;
+     
+      border: 1px solid #18ac93;
+
   }
+
+  @media (min-width: 1200px) {
+      width: 50%;
+      margin-right: 20px;
+  } 
 }
 
 &__item:last-child {
 
   @media (min-width: 768px) {
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
   }
-}
-    &__pic-item {
-      margin-top: -25px;
-      border: 2px solid #fff;
+
+  @media (min-width: 1200px) {
+    margin-right: 0;
+  }
+
 }
 
-  &__blockquote p{
-    font-size: @font-size-base;
-    font-style: normal;
+  &__pic { margin-bottom: 9px; }
 
-      &__cite--vk {}
+  &__pic-item {
+    margin-top: -25px;
+    border: 2px solid #fff;
+  }
+
+  &__blockquote { 
+    margin-top: 9px;
+    margin-bottom: 13px;
+
+    &-img {
+      display: block;
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+
+  }
+
+  &__blockquote p {
+    margin-top: 6px;
+      height: 110px;
+      overflow: hidden;
+      font-size: @font-size-base;
   }
 
   &__cite {
     font-weight: @font-weight-medium;
     font-style: normal;
+    margin-bottom: 6px;
+  }
+
+  &__date {
+    margin-top: 13px;
+    padding-top: 14px;
   }
 
   &__date p {
@@ -67,4 +113,5 @@
   }      
 
   .btn--reviews {}
+
 }

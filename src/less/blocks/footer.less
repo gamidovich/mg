@@ -3,36 +3,57 @@
 	display: flex;
 
 
+
 	&__inner {
+		margin: 0 auto;
+		padding: 26px 0;
 
 		@media (min-width: 768px) {
 			display: flex;
-			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			width: 726px;
+			
+			
+
 		}
+
+		@media (min-width: 1200px) {
+			width: 1200px;
+		}
+
 	}
 
 	&__address {
 		display: none;
+		width: 160px;
+		font-size: @font-size-sm;
 		
 		@media (min-width: 768px) {
 			display: block;
-			flex-grow: 1;
+			// flex-grow: 1;
 		}
 
 	}
 
 	&__links {
+
 		@media (min-width: 768px) {
-			flex-grow: 3;
+			// flex-grow: 3;
 		}
 	}
 
 	&__contacts {
 		display: none;
+		width: 160px;
+		
+
+		&-tel,
+		&-mail {font-size: @font-size-sm;}
 
 		@media (min-width: 768px) {
 			display: block;
-			flex-grow: 1;
+			// flex-grow: 1;
 		}
 
 	}
