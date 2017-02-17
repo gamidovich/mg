@@ -4,6 +4,8 @@
 	
 	&__list {
 
+		margin-top: 21px;
+
 		list-style-type: none;
 
 		&--close { display: none; }
@@ -12,6 +14,7 @@
 
 		@media(min-width: 1200px) {
 			display: flex;
+			margin-top: 0;
 		}
 
 	}
@@ -42,11 +45,18 @@
   		color: @gray-darken;
   		text-align: center;
   		text-decoration: none;
-  		padding: 36px 10px 32px 10px;
+  		padding: 14px 10px 16px 10px;
+
+
+		@media (min-width: 1200px) {
+			padding: 36px 10px 32px 10px;
+		}
+
   	}
 
   	&__link:hover {
 		color: @secondary-color;
+		transition: color @transition;
 	}
 
 	&__link--active-1:link,
@@ -54,7 +64,11 @@
 		color: @secondary-color;
 		background-image: url(../img/pic/active-1.jpg);	
 		background-repeat: no-repeat;
-		background-position: center 60px;
+		background-position: center 36px;
+
+		@media (min-width: 1200px) {
+			background-position: center 60px;
+		}	
 	}
 
 	&__link--active-2:link,
@@ -62,7 +76,11 @@
 		color: @secondary-color;
 		background-image: url(../img/pic/active-2.jpg);	
 		background-repeat: no-repeat;
-		background-position: center 60px;	
+		background-position: center 36px;
+
+		@media (min-width: 1200px) {
+			background-position: center 60px;
+		}	
 	}
 
 }

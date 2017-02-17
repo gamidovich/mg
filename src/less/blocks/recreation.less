@@ -12,8 +12,8 @@
       @media (min-width: 768px) {
         max-width: 570px;
         margin: 0 auto;
-        min-height: 560px;
-        padding: 40px 0 100px 0;
+       
+        padding: 40px 0 0 0;
       }
 
       @media (min-width: 1200px) {
@@ -32,6 +32,7 @@
 
   &__label:hover {
       color: @secondary-color;
+      transition: color @transition;
       cursor: pointer;
   }
 
@@ -82,5 +83,12 @@
         margin: 0 22px 20px 22px;
         text-align: center;
      }
+
+
+  }
+
+  &__item img {
+    border-radius: 50%;
+    box-shadow: @box-shadow-main;
   }
 }

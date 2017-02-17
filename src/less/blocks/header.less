@@ -5,24 +5,28 @@
 
   &__inner {
 
+    padding: 16px 0 21px 0;
+
     @media (min-width: 1200px) {
         width: 1200px;
         margin: 0 auto;
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     
     .header-nav__burger {
-      position: absolute;
-      top: 6px;
-      right: 0;
-      padding: 22px;
-      z-index: 1;
+        position: absolute;
+        top: 6px;
+        right: 0;
+        padding: 22px;
+        z-index: 1;
 
-      @media (min-width: 1200px) {
-        display: none;
-      }
+        @media (min-width: 1200px) {
+          display: none;
+          padding: 0;
+        }
 
     } 
 

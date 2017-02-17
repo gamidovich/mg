@@ -9,5 +9,33 @@ $(document).ready(function() {
 		e.preventDefault();
 		mainNav.classList.toggle('header-nav__list--visible');		
 	}	
+});
+
+$(document).ready(function(){
+
+  	$('.slider-for').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: true,
+	  asNavFor: '.slider-nav'
+	});
+
+	$('.slider-nav').slick({
+	  slidesToShow: 6,
+	  slidesToScroll: 1,
+	  asNavFor: '.slider-for',
+	  centerMode: true,
+	  focusOnSelect: true,
+	  responsive: [{
+
+      	breakpoint: 768,
+      		settings: {
+        	slidesToShow: 5,
+        	slidesToScroll: 1
+      	    }
+
+      }]
+});
 
 });

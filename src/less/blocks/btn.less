@@ -5,12 +5,20 @@
   color: @gray-lightest;
   border: none;
   background: transparent;
-  transition: background 1s ease;
   padding: 11px 32px;
   outline: none;
   cursor: pointer;
   line-height: 2rem;
+
+    &--transform { display: inline-block; }
+    &--transform:hover { 
+      transform: scale(1.1);
+      box-shadow: @box-shadow-main; 
+    }
+
 }
+
+
 
 .btn--delete {
     display: none;
@@ -73,3 +81,6 @@
 .btn-link:hover {
   border: none;
 }
+
+.btn:hover { transition: background-color @transition; }
+

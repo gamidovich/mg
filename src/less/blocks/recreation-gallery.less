@@ -1,1 +1,32 @@
-.recreation-gallery {}
+.recreation-gallery {
+
+	&__inner {
+
+		padding-bottom: 40px;
+
+		@media (min-width: 1200px) {
+			max-width: 1180px;
+			margin: 0 auto;
+		}
+
+	}
+
+	.slider-for .slick-track {
+		height: 500px;
+		overflow: hidden;
+	}
+
+	.slider-nav .slick-track {
+		height: 114px;
+		overflow: hidden;
+		display: none;
+
+		@media (min-width: 768px) {
+			display: block;
+		}
+
+
+
+	}
+
+}
