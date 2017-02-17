@@ -9,16 +9,15 @@
   outline: none;
   cursor: pointer;
   line-height: 2rem;
+  transition: all @transition; 
 
     &--transform { display: inline-block; }
     &--transform:hover { 
       transform: scale(1.1);
-      box-shadow: @box-shadow-main; 
+      box-shadow: @box-shadow-secondary;      
     }
 
 }
-
-
 
 .btn--delete {
     display: none;
@@ -82,5 +81,5 @@
   border: none;
 }
 
-.btn:hover { transition: background-color @transition; }
+
 
