@@ -11,11 +11,20 @@
   line-height: 2rem;
   transition: all @transition; 
 
-    &--transform { display: inline-block; }
+    &--transform { 
+      display: inline-block;
+      opacity: 0;
+   }
     &--transform:hover { 
       transform: scale(1.1);
       box-shadow: @box-shadow-secondary;      
     }
+
+    &--animation {
+      animation: fade-in 4s forwards;
+    }
+
+
 
 }
 

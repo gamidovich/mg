@@ -50,44 +50,41 @@ window.onload = function() {
 		return bottom;
     }
 
-    var btnCoord = getCoords(btn);
-    var winY = document.documentElement.clientHeight;
+    var btnCoord = getCoords(btn); console.log(btnCoord);
 
-    window.onscroll = function() {
+    function winY() {
+    	return document.documentElement.clientHeight + pageYOffset;
+    }
+
+    if(btnCoord <= winY()) {
+    	btn.classList.add('btn--animation');	
+    }
+
+    window.onscroll = function() {    	
   
-    	if(btnCoord <= winY) {
-    		console.log('I love Epixx' + ' ' + btnCoord + ' ' + winY);
+    	if(btnCoord <= winY()) {    		
+   			btn.classList.add('btn--animation');
     	}
   
     }
 
+    var recImg = document.querySelectorAll('.recreation__item img');
+    var imgLength = recImg.length;
+
+    function changeImg(e) {
+    	var currentImg = e.target;
+    	for(var i = 0; i < imgLength; i++) {
+    		if(recImg[i] == currentImg) {
+    			recImg[i].classList.toggle('shadow');
+    		} else {
+    			recImg[i].classList.remove('shadow');
+    		}
+    	}
+    }
+
+    for(var j = 0; j < imgLength; j++) {
+  		recImg[j].addEventListener('click', changeImg);
+	}
+
+
 };
-
-// // 
-// window.onscroll = function() {
-
-
-// }
-
-//   // // опеределяем насколько прокручен документ
-//   // var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-
-//   // // получаем кнопку
-//   var btn = document.getElementById('reviews-btn');
-
-
-//   var btnCoord = btn.
-
-//   // координата элемента в документе
-//   function getCoords(elem) {
-
-//   	var box = elem.getBoundingClientRect();
-//   	var top = box.top + pageYOffset;
-
-// 	return top;
-
-//    }
-// console.log(getCoords(btn));
-//    //   if(scrolled >=  getCoords(btn)) {
-//   	// alert('sdsdsdsdsds');
-//   	// }

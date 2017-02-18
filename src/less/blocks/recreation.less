@@ -90,5 +90,13 @@
   &__item img {
     border-radius: 50%;
     box-shadow: @box-shadow-primary;
+    filter: grayscale(100%);
+    transition: filter @transition;
   }
+
+  &__item img.shadow {
+    filter: none;
+    animation: blur 4s forwards;
+  }
+
 }
