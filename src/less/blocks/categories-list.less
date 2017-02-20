@@ -5,13 +5,16 @@
 	text-align: center;	
 
 	@media (min-width: 768px) {
+
 		display: flex;
       	justify-content: center;
       	align-items: center;
+      	
 	}
 
 	&__item {
-display: block;
+
+		display: block;
 		margin: 20px 0;
 		background-color: #fff;
 		border: 1px solid #1ea590;
@@ -25,15 +28,11 @@ display: block;
 
 	}
 
-	&__item:hover img {
-		filter: none;
-	}
+	&__item:hover img {	filter: none; }
 
 	&__item:last-child {
 
-		@media (min-width: 768px) {
-			margin-right: 0;
-		}
+		@media (min-width: 768px) {	margin-right: 0; }
 
 	}
 
@@ -41,6 +40,7 @@ display: block;
 		
 		height: 200px;
 		overflow: hidden;
+
 	}
 
 	&__pic img {
@@ -49,19 +49,18 @@ display: block;
 		height: 100%;
 		filter: grayscale(100%);
 		transition: filter @transition;
+
 	}
 
-	&__price {
-		padding: 46px 66px 50px 66px;	
-	}
+	&__price { padding: 46px 66px 50px 66px; }
 
-	&__title {		
-		font-size: @font-size-lg-xx;		
-	}
+	&__title { font-size: @font-size-lg-xx;	}
 
 	.room__price {
+
 		font-size: @font-size-sm;
 		font-weight: @font-weight-medium;
+		
 	}
 
 	.price__number { color: @secondary-color; }
