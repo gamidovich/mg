@@ -1,64 +1,48 @@
 .footer {
-	position: absolute;
-	bottom: 0;
+
 	width: 100%;
 	text-align: center;
 	display: flex;
 	align-self: flex-end;
 
-
-
 	&__inner {
+
 		margin: 0 auto;
 		padding: 26px 0;
 
 		@media (min-width: 768px) {
+
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			width: 726px;
-			
-			
 
 		}
 
-		@media (min-width: 1200px) {
-			width: 1200px;
-		}
+		@media (min-width: 1200px) { width: 1200px;	}
 
 	}
 
 	&__address {
+
 		display: none;
 		width: 160px;
 		font-size: @font-size-sm;
 		
-		@media (min-width: 768px) {
-			display: block;
-			// flex-grow: 1;
-		}
+		@media (min-width: 768px) { display: block;	}
 
-	}
-
-	&__links {
-
-		@media (min-width: 768px) {
-			// flex-grow: 3;
-		}
 	}
 
 	&__contacts {
-		display: none;
-		width: 160px;
 		
+		display: none;
+		width: 160px;		
 
 		&-tel,
-		&-mail {font-size: @font-size-sm;}
+		&-mail { font-size: @font-size-sm; }
 
-		@media (min-width: 768px) {
-			display: block;
-			// flex-grow: 1;
-		}
+		@media (min-width: 768px) { display: block;	}
 
 	}
+
 }
