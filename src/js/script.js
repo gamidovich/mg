@@ -46,31 +46,9 @@ $('.reviews__list').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
+      breakpoint: 1199,
+      settings: "unslick"
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 
@@ -86,7 +64,7 @@ window.onload = function() {
 		return bottom;
     }
 
-    var btnCoord = getCoords(btn); console.log(btnCoord);
+    var btnCoord = getCoords(btn);
 
     function winY() {
     	return document.documentElement.clientHeight + pageYOffset;
@@ -121,6 +99,5 @@ window.onload = function() {
     for(var j = 0; j < imgLength; j++) {
   		recImg[j].addEventListener('click', changeImg);
 	}
-
 
 };
