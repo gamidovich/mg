@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 $(document).ready(function(){
 
-    $('.slider-for').slick({
+  $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -25,6 +25,7 @@ $(document).ready(function(){
     slidesToShow: 6,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
+    arrows: false,
     centerMode: true,
     focusOnSelect: true,
     responsive: [{
@@ -39,17 +40,32 @@ $(document).ready(function(){
 });
 
 $('.reviews__list').slick({
-  dots: true,
   infinite: false,
   speed: 300,
   slidesToShow: 2,
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1199,
+      breakpoint: 1200,
       settings: "unslick"
     }
   ]
+});
+
+  $('.slider-for1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav1'
+  });
+
+  $('.slider-nav1').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for1',
+    centerMode: true,
+    focusOnSelect: true,
 });
 
 });
