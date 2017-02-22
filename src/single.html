@@ -3,116 +3,126 @@
 <head>
 	<meta charset="UTF-8">
 	<title>GREEN VALLEY</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="https://use.fontawesome.com/9741d393d6.js"></script>
+	<script src="/js/script.min.js"></script>
+	<script>@@include('fonts/font_loading.js')</script>
+	<script>
+		loadFont(
+			'FiraSans',
+			'/css/font-woff.css?v=1', 
+			'/css/font-woff2.css?v=1'
+		);
+	</script>
 </head>
 <body>
-	<header class="main-header">
-		<div class="main-header__inner">
-			<a href="#" class="logo"><img src="#" alt=""></a>
-			<nav class="main-nav">
-				<ul class="main-nav-list">
-					<li class="main-nav__item"><a href="#" class="main-nav__link">НОМЕРА</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">КОТТЕДЖ</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">РЕСТОРАН</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">ОТДЫХ</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">КОНТАКТЫ</a></li>
+<div class="wrapper">
+	<div class="header">
+		<div class="header__inner">
+			<a href="index.html" class="logo"><img src="img/pic/logo.png" alt=""></a>
+			<a href="#top" id="toggler" class="header-nav__burger">
+				<i class="fa fa-bars fa-3x header-nav__burger-icon"></i>
+			</a>
+			<nav class="header-nav">
+				<ul id="main-nav" class="header-nav__list">
+					<li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link--active-2" name="top">НОМЕРА</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link--active-1">КОТТЕДЖ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">РЕСТОРАН</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">ОТДЫХ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">КОНТАКТЫ</a></li>
 				</ul>
-				<span class="main-nav__burger"></span>
 			</nav>
-			<div class="main-header__contacts">
-				<a href="+79650617878" class="main-header__phone">+7 812 777-55-88</a>
-				<div class="main-header__address">г. Санкт-Петербург, Приморское ш.600</div>
+			<div class="header__contacts">
+				<a class="header__phone" href="tel:+79650617878">+7 812 777-55-88</a>
+				<div class="header__address">г. Санкт-Петербург, Приморское ш.600</div>
 			</div>
-			<a href="#" class="btn  btn--orange">ЗАБРОНИРОВАТЬ</a>
-		</div>		
-	</header>
+			<a href="#" class="btn  btn--orange btn--icon  btn--delete"><i class="fa fa-calendar-o btn--pic" aria-hidden="true"></i>ЗАБРОНИРОВАТЬ</a>
+		</div>
+	</div>
 
-	<main>
-		<div class="room__inner">
-			<h2 class="title">Эконом</h2>
-			<p class="room__price">от <span class="price__color">3400</span> РУБ./СУТКИ</p>	
-			<div class="room">
-				<div class="room__about">
-					<h3 class="room__about-title">О номере</h3>
-					<div class="room__about-description">В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек. Часть номеров с видом на Финский залив. </div>
-					<h3 class="room__about-title">Удобства</h3>
-					<div class="room__about-description">
-						<ul class="room__list">
-							<li class="room__item">WI-FI</li>
-							<li class="room__item">Двуспальная кровать</li>
-							<li class="room__item">Кресло</li>
-							<li class="room__item">Раскладывающийся диван</li>
-							<li class="room__item">Фен</li>
-							<li class="room__item">Рабочий стол</li>
-							<li class="room__item">Шкаф для одежды</li>
-							<li class="room__item">Багажная тумба</li>
-							<li class="room__item">Сейф</li>
-						</ul>
-					</div>
-					<h3 class="room__about-title">В стоимость входит</h3>
-					<div class="room__about-description">
-						<ul class="room__list">
-							<li class="room__item">Бассейн с с 8.30 до 10.00</li>
-							<li class="room__item">Завтрак и обед «шведский стол»</li>
-						</ul>
-					</div>
+	<div class="main">
+		<div class="single-room">
+			<div class="single-room__inner clearfix">
+				<h2 class="title title--single-room">Эконом</h2>
+				<p class="single-room__price">от <span  class="price__number">3400</span> РУБ./СУТКИ</p>	
+				<div class="single-room__gallery right">
+					<div><img src="img/imgs/4.jpg" alt=""></div>
+					<div><img src="img/imgs/7.jpg" alt=""></div>
+					<div><img src="img/imgs/3.jpg" alt=""></div>
+					<div><img src="img/imgs/5.jpg" alt=""></div>
+					<div><img src="img/imgs/6.jpg" alt=""></div>
 				</div>
-				<div class="room__gallery"></div>
-				<div class="room__book">
-					<a href="" class="btn btn-orange">ЗАБРОНИРОВАТЬ</a>
-					<p class="room__price">от <span class="price__color">3400</span> РУБ./СУТКИ</p>				
-				</div>
+				<div class="single-room__about left">
+					<h3 class="single-room__title">О номере</h3>
+					<div class="single-room__description">В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек. Часть номеров с видом на Финский залив. </div>
+					<h3 class="single-room__title">Удобства</h3>					
+					<ul class="single-room__list">
+						<li class="single-room__item">WI-FI</li>
+						<li class="single-room__item">Двуспальная кровать</li>
+						<li class="single-room__item">Кресло</li>
+						<li class="single-room__item">Раскладывающийся диван</li>
+						<li class="single-room__item">Фен</li>
+						<li class="single-room__item">Рабочий стол</li>
+						<li class="single-room__item">Шкаф для одежды</li>
+						<li class="single-room__item">Багажная тумба</li>
+						<li class="single-room__item">Сейф</li>
+					</ul>					
+					<h3 class="single-room__title">В стоимость входит</h3>					
+					<ul class="single-room__list">
+						<li class="single-room__item">Бассейн с с 8.30 до 10.00</li>
+						<li class="single-room__item">Завтрак и обед «шведский стол»</li>
+					</ul>					
+				</div>				
+			</div>
+			<div class="single-room__links">
+				<a href="#" class="btn  btn--orange btn--icon"><i class="fa fa-calendar-o btn--pic" aria-hidden="true"></i>ЗАБРОНИРОВАТЬ</a>
+				<p class="single-room__price">от <span  class="price__number">3400</span> РУБ./СУТКИ</p>
 			</div>
 		</div>
 		<div class="categories">
 			<div class="categories-inner">				
-				<div class="categories__item">
-					<div class="categories__item-img">
-						<img src="" alt="">
-					</div>
-					<div class="categories__item-price">
-						<p class="categories__item-title">Стандарт</p>
-						<p class="room__price">от <span class="price__color">4000</span> РУБ./СУТКИ</p>
-					</div>
-				</div>
-				<div class="categories__item">
-					<div class="categories__item-img">
-						<img src="" alt="">
-					</div>
-					<div class="categories__item-price">
-						<p class="categories__item-title">Стандарт +</p>
-						<p class="room__price">от <span class="price__color">4500</span> РУБ./СУТКИ</p>
-					</div>
-				</div>
-				<div class="categories__item">
-					<div class="categories__item-img">
-						<img src="" alt="">
-					</div>
-					<div class="categories__item-price">
-						<p class="categories__item-title">Люкс</p>
-						<p class="room__price">от <span class="price__color">5700</span> РУБ./СУТКИ</p>
-					</div>
+				<div class="categories-list">
+					<a class="categories-list__item" href="#" title="">
+						<div class="categories-list__pic">
+							<img src="img/imgs/img3.jpg" alt="">
+						</div>
+						<div class="categories-list__price">
+							<p class="categories-list__title">В отеле</p>
+							<p class="room__price">от <span class="price__number">4000</span> РУБ./СУТКИ</p>
+						</div>
+					</a>
+					<a class="categories-list__item" href="#" title="">
+						<div class="categories-list__pic">
+							<img src="img/imgs/img4.jpg" alt="">
+						</div>
+						<div class="categories-list__price">
+							<p class="categories-list__title">В отеле</p>
+							<p class="room__price">от <span class="price__number">4000</span> РУБ./СУТКИ</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
-	</main>
-
-	<footer class="main-footer">
-		<div class="main-footer__inner">
-			<div class="main-footer__address">г. Санкт-Петербург Приморское шоссе</div>
-			<div class="main-footer__links">
-				<a href="#" class="logo"><img src="#" alt=""></a>
-				<div class="social-list">
-					<a href="#" class="social-item  social-item--vk" title=""></a>
-					<a href="#" class="social-item  social-item--inst" title=""></a>
-					<a href="#" class="social-item  social-item--fb" title=""></a>
-				</div>	
+	</div>
+</div>
+<div class="footer">
+	<div class="footer__inner">
+		<p class="footer__address">г. Санкт-Петербург Приморское шоссе</p>
+		<div class="footer__links">
+			<a href="#" class="logo"><img src="img/pic/logo.png" alt=""></a>
+			<div class="social-list">
+				<a href="#" class="social-item  social-item--vk" title=""></a>
+				<a href="#" class="social-item  social-item--inst" title=""></a>
+				<a href="#" class="social-item  social-item--fb" title=""></a>
 			</div>
-			<div class="main-footer__contacts">
-				<p class="main-footer__contacts-tel">+7 812 777-55-88</p>
-				<p class="main-footer__contacts-mail">info@greenvalley.ru</p>
-			</div>
-		</div>		
-	</footer>	
+		</div>
+		<div class="footer__contacts">
+			<p class="footer__contacts-tel">+7 812 777-55-88</p>
+			<p class="footer__contacts-mail">info@greenvalley.ru</p>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>

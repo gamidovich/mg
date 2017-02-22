@@ -52,20 +52,42 @@ $('.reviews__list').slick({
   ]
 });
 
-  $('.slider-for1').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav1'
-  });
-
-  $('.slider-nav1').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for1',
-    centerMode: true,
-    focusOnSelect: true,
+$('.single-room__gallery').slick({
+  infinite: false,
+  speed: 300,
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+   responsive: [
+    {
+      breakpoint: 1201,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: true
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 321,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
 });
