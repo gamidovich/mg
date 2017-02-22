@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GREEN VALLEY</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="https://use.fontawesome.com/9741d393d6.js"></script>
+	<script src="/js/script.min.js"></script>
+	<script>// Подгрузка шрифтов
+function loadFont(fontName, woffUrl, woff2Url) {
+  // 0. Многие неподдерживаемые браузеры должны останавливать работу тут.
+  var nua = navigator.userAgent;
+  var noSupport = !window.addEventListener // IE8 и ниже
+        || (nua.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/) && !nua.match(/Chrome/)) // Android Stock Browser до 4.4 и Opera Mini
+
+  if (noSupport) {
+    return;
+  }
+
+  // 1. Настраиваем localStorage
+  var loSto = {};
+  try {
+    // Устанавливаем вспомогательную переменную для помощи с localStorage,
+    // например, для случаев когда cookies отключены и браузер не даёт к ним доступа.
+    // Иначе могут быть получены исключения, которые полностью остановят загрузку шрифтов.
+    loSto = localStorage || {};
+  } catch(ex) {}
+
+  var localStoragePrefix = 'x-font-' + fontName;
+  var localStorageUrlKey = localStoragePrefix + 'url';
+  var localStorageCssKey = localStoragePrefix + 'css';
+  var storedFontUrl = loSto[localStorageUrlKey];
+  var storedFontCss = loSto[localStorageCssKey];
+
+  // 2. Создаём элемент <style>, который мы используем для вставки шрифта, закодированного в base64.
+  var styleElement = document.createElement('style');
+  styleElement.rel = 'stylesheet';
+  document.head.appendChild(styleElement);
+  // Из-за ошибок IE9 установка styleElement.textContent должна быть после этой строки.
+
+  // 3. Проверяем, находится ли шрифт уже в localStorage и последней ли он версии.
+  if (storedFontCss && (storedFontUrl === woffUrl || storedFontUrl === woff2Url)) {
+    // css до сих пор в localStorage
+    // и были загружены из одного из текущих адресов
+
+    // 4. Применяем стили шрифта.
+    styleElement.textContent = storedFontCss;
+  } else {
+    // Данных нет, или они загружены с устаревшего URL,
+    // поэтому мы должны загрузить их снова.
+
+    // 5. Проверяем поддержку WOFF2 чтобы узнать, какой URL использовать.
+    var url = (woff2Url && supportsWoff2())
+    ? woff2Url // WOFF2 URL передан в функцию и поддерживается.
+    : woffUrl; // Поддерживается только WOFF.
+
+    // 6. Получаем данные с сервера.
+    var request = new XMLHttpRequest();
+    request.open('GET', url);
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400) {
+        // 7. Обновляем localStorage новыми данными и применяем стили шрифта.
+        loSto[localStorageUrlKey] = url;
+        loSto[localStorageCssKey] = styleElement.textContent = request.responseText;
+      }
+    };
+    request.send();
+  }
+
+  function supportsWoff2() {
+    // https://github.com/filamentgroup/woff2-feature-test
+    if( !( "FontFace" in window ) ) {
+      return false;
+    }
+
+    var f = new FontFace('t', 'url( "data:application/font-woff2;base64,d09GMgABAAAAAADcAAoAAAAAAggAAACWAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABk4ALAoUNAE2AiQDCAsGAAQgBSAHIBtvAcieB3aD8wURQ+TZazbRE9HvF5vde4KCYGhiCgq/NKPF0i6UIsZynbP+Xi9Ng+XLbNlmNz/xIBBqq61FIQRJhC/+QA/08PJQJ3sK5TZFMlWzC/iK5GUN40psgqvxwBjBOg6JUSJ7ewyKE2AAaXZrfUB4v+hze37ugJ9d+DeYqiDwVgCawviwVFGnuttkLqIMGivmDg" ) format( "woff2" )', {});
+    f.load()['catch'](function() {});
+
+    return f.status == 'loading';
+  }
+}
+</script>
+	<script>
+		loadFont(
+			'FiraSans',
+			'/css/font-woff.css?v=1', 
+			'/css/font-woff2.css?v=1'
+		);
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="header">
+		<div class="header__inner">
+			<a href="index.html" class="logo"><img src="img/pic/logo.png" alt=""></a>
+			<a href="#top" id="toggler" class="header-nav__burger">
+				<i class="fa fa-bars fa-3x header-nav__burger-icon"></i>
+			</a>
+			<nav class="header-nav">
+				<ul id="main-nav" class="header-nav__list">
+					<li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link--active-2" name="top">НОМЕРА</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link--active-1">КОТТЕДЖ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">РЕСТОРАН</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">ОТДЫХ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">КОНТАКТЫ</a></li>
+				</ul>
+			</nav>
+			<div class="header__contacts">
+				<a class="header__phone" href="tel:+79650617878">+7 812 777-55-88</a>
+				<div class="header__address">г. Санкт-Петербург, Приморское ш.600</div>
+			</div>
+			<a href="#" class="btn  btn--orange btn--icon  btn--delete"><i class="fa fa-calendar-o btn--pic" aria-hidden="true"></i>ЗАБРОНИРОВАТЬ</a>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="single-room">
+			<div class="single-room__inner">
+				<h2 class="title title--single-room">Эконом</h2>
+				<p class="single-room__price">от <span  class="price__number">3400</span> РУБ./СУТКИ</p>	
+				<div class="single-room__gallery">
+					<div><img src="img/imgs/4.jpg" alt=""></div>
+					<div><img src="img/imgs/7.jpg" alt=""></div>
+					<div><img src="img/imgs/3.jpg" alt=""></div>
+					<div><img src="img/imgs/5.jpg" alt=""></div>
+					<div><img src="img/imgs/6.jpg" alt=""></div>
+				</div>
+				<div class="single-room__about">
+					<h3 class="single-room__title">О номере</h3>
+					<div class="single-room__description">В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек. Часть номеров с видом на Финский залив. </div>
+					<h3 class="single-room__title">Удобства</h3>					
+					<ul class="single-room__list">
+						<li class="single-room__item">WI-FI</li>
+						<li class="single-room__item">Двуспальная кровать</li>
+						<li class="single-room__item">Кресло</li>
+						<li class="single-room__item">Раскладывающийся диван</li>
+						<li class="single-room__item">Фен</li>
+						<li class="single-room__item">Рабочий стол</li>
+						<li class="single-room__item">Шкаф для одежды</li>
+						<li class="single-room__item">Багажная тумба</li>
+						<li class="single-room__item">Сейф</li>
+					</ul>					
+					<h3 class="single-room__title">В стоимость входит</h3>					
+					<ul class="single-room__list">
+						<li class="single-room__item">Бассейн с с 8.30 до 10.00</li>
+						<li class="single-room__item">Завтрак и обед «шведский стол»</li>
+					</ul>					
+				</div>
+				<div class="single-room__links">
+					<a href="#" class="btn  btn--orange btn--icon"><i class="fa fa-calendar-o btn--pic" aria-hidden="true"></i>ЗАБРОНИРОВАТЬ</a>
+					<p class="single-room__price">от <span  class="price__number">3400</span> РУБ./СУТКИ</p>
+				</div>				
+			</div>
+		</div>
+		<div class="categories">
+			<div class="categories-inner">				
+				<div class="categories-list">
+					<a class="categories-list__item" href="#" title="">
+						<div class="categories-list__pic">
+							<img src="img/imgs/img3.jpg" alt="">
+						</div>
+						<div class="categories-list__price">
+							<p class="categories-list__title">В отеле</p>
+							<p class="room__price">от <span class="price__number">4000</span> РУБ./СУТКИ</p>
+						</div>
+					</a>
+					<a class="categories-list__item" href="#" title="">
+						<div class="categories-list__pic">
+							<img src="img/imgs/img4.jpg" alt="">
+						</div>
+						<div class="categories-list__price">
+							<p class="categories-list__title">В отеле</p>
+							<p class="room__price">от <span class="price__number">4000</span> РУБ./СУТКИ</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer__inner">
+		<p class="footer__address">г. Санкт-Петербург Приморское шоссе</p>
+		<div class="footer__links">
+			<a href="#" class="logo"><img src="img/pic/logo.png" alt=""></a>
+			<div class="social-list">
+				<a href="#" class="social-item  social-item--vk" title=""></a>
+				<a href="#" class="social-item  social-item--inst" title=""></a>
+				<a href="#" class="social-item  social-item--fb" title=""></a>
+			</div>
+		</div>
+		<div class="footer__contacts">
+			<p class="footer__contacts-tel">+7 812 777-55-88</p>
+			<p class="footer__contacts-mail">info@greenvalley.ru</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
