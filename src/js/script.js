@@ -90,6 +90,41 @@ $('.single-room__gallery').slick({
   ]
 });
 
+$('.single-categories__list').slick({
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1201,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 321,
+      settings: "unslick"
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
 });
 
 window.onload = function() {
