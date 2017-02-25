@@ -3,52 +3,65 @@
 <head>
 	<meta charset="UTF-8">
 	<title>GREEN VALLEY</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link href="//code.cdn.mozilla.net/fonts/fira.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
 	<script src="https://use.fontawesome.com/9741d393d6.js"></script>
+	<script src="/js/script.min.js"></script>
+	<script>@@include('fonts/font_loading.js')</script>
+	<script>
+		loadFont(
+			'FiraSans',
+			'/css/font-woff.css?v=1', 
+			'/css/font-woff2.css?v=1'
+		);
+	</script>
 </head>
 <body>
-
-	<header class="main-header">
-		<div class="main-header__inner">
-			<a href="#" class="logo"><img src="#" alt=""></a>
-			<nav class="main-nav">
-				<ul class="main-nav-list">
-					<li class="main-nav__item"><a href="#" class="main-nav__link">НОМЕРА</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">КОТТЕДЖ</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">РЕСТОРАН</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">ОТДЫХ</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">КОНТАКТЫ</a></li>
+<div class="wrapper">
+	<div class="header">
+		<div class="header__inner">
+			<a href="index.html" class="logo"><img src="img/pic/logo.png" alt=""></a>
+			<a href="#top" id="toggler" class="header-nav__burger">
+				<i class="fa fa-bars fa-3x header-nav__burger-icon"></i>
+			</a>
+			<nav class="header-nav">
+				<ul id="main-nav" class="header-nav__list">
+					<li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link--active-2" name="top">НОМЕРА</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link--active-1">КОТТЕДЖ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">РЕСТОРАН</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">ОТДЫХ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">КОНТАКТЫ</a></li>
 				</ul>
-				<span class="main-nav__burger"></span>
 			</nav>
-			<div class="main-header__contacts">
-				<a href="+79650617878" class="main-header__phone">+7 812 777-55-88</a>
-				<div class="main-header__address">г. Санкт-Петербург, Приморское ш.600</div>
+			<div class="header__contacts">
+				<a class="header__phone" href="tel:+79650617878">+7 812 777-55-88</a>
+				<div class="header__address">г. Санкт-Петербург, Приморское ш.600</div>
 			</div>
-			<a href="#" class="btn  btn--orange">ЗАБРОНИРОВАТЬ</a>
-		</div>		
-	</header>
+			<a href="#" class="btn  btn--orange btn--icon  btn--delete"><i class="fa fa-calendar-o btn--pic" aria-hidden="true"></i>ЗАБРОНИРОВАТЬ</a>
+		</div>
+	</div>
 
-	<main>
+	<div class="main">
 		<form action="#">
-			<div class="form-inner">
-				<h2 class="title">Эконом</h2>
-				<p class="form__description">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <span class="form__description-num-color">+7 812 777-55-88</span></p>
+			<div class="form-promo">
+				<div class="form-promo__inner">
+					<h1 class="title title--form-promo">Бронирование</h1>
+					<p class="form-promo__description">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните<br> по телефону: <span class="form-promo__num-color">+7 812 777-55-88</span></p>
+				</div>
 			</div>
 			<div class="form-date">
-				<div class="form-inner">
+				<div class="form-date__inner">
 					<p class="form-date__step">Шаг 1</p>
-					<h3 class="title  title--h3">Дата отдыха</h3>	
-					<div class="form-period">
-						<div class="form-period__entry">
-							<p class="form-period__title">ДАТА ВЪЕЗДА</p>
+					<h1 class="title  title--form-date">Дата отдыха</h1>	
+					<div class="form-date__period">
+						<div class="form-date__entry">
+							<p class="form-date__title">ДАТА ВЪЕЗДА</p>
 							<input type="number" size="2" name="number-entry" value="" placeholder="ДД">	
 							<input type="number" size="2" name="month-entry" value="" placeholder="ММ">
 							<input type="number" size="4" name="year-entry" value="" placeholder="ГГГГ">
 						</div>
-						<div class="form-period__exit">
-							<p class="form-period__title">ДАТА ВЫЕЗДА</p>
+						<div class="form-date__exit">
+							<p class="form-date__title">ДАТА ВЫЕЗДА</p>
 							<input type="number" size="2" name="number-exit" placeholder="ДД">
 							<input type="number" size="2" name="month-exit" placeholder="ММ">
 							<input type="number" size="4" name="year-exit" placeholder="ГГГГ">
@@ -56,7 +69,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="form-place">
+<!-- 			<div class="form-place">
 				<div class="form-inner">
 					<p class="form-date__step">Шаг 2</p>
 					<h3 class="title  title--h3">Место проживания</h3>
@@ -169,6 +182,7 @@
 							<div class="payment__cash">
 								<div class="payment__cart-info">
 									<div class="payment__cash-radio">
+									<!-- Ispravit ID kopiya stroki 179 -->
 										<input type="radio" name="payment" id="cash">
 										<label for="cash">СЕЙЧАС</label>
 									</div>
@@ -191,26 +205,27 @@
 				</div>
 			</div>
 			<input type="submit" value="ЗАБРОНИРОВАТЬ">
-		</form>
-	</main>
+ -->		</form>
+	</div>
+</div>
 
-	<footer class="main-footer">
-		<div class="main-footer__inner">
-			<div class="main-footer__address">г. Санкт-Петербург Приморское шоссе</div>
-			<div class="main-footer__links">
-				<a href="#" class="logo"><img src="#" alt=""></a>
-				<div class="social-list">
-					<a href="#" class="social-item  social-item--vk" title=""></a>
-					<a href="#" class="social-item  social-item--inst" title=""></a>
-					<a href="#" class="social-item  social-item--fb" title=""></a>
-				</div>	
+<div class="footer">
+	<div class="footer__inner">
+		<p class="footer__address">г. Санкт-Петербург Приморское шоссе</p>
+		<div class="footer__links">
+			<a href="#" class="logo"><img src="img/pic/logo.png" alt=""></a>
+			<div class="social-list">
+				<a href="#" class="social-item  social-item--vk" title=""></a>
+				<a href="#" class="social-item  social-item--inst" title=""></a>
+				<a href="#" class="social-item  social-item--fb" title=""></a>
 			</div>
-			<div class="main-footer__contacts">
-				<p class="main-footer__contacts-tel">+7 812 777-55-88</p>
-				<p class="main-footer__contacts-mail">info@greenvalley.ru</p>
-			</div>
-		</div>		
-	</footer>	
+		</div>
+		<div class="footer__contacts">
+			<p class="footer__contacts-tel">+7 812 777-55-88</p>
+			<p class="footer__contacts-mail">info@greenvalley.ru</p>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>	
