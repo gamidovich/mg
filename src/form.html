@@ -41,57 +41,61 @@
 		</div>
 	</div>
 
-	<div class="main">
+	<div class="form">
 		<form action="#">
-			<div class="form-promo">
-				<div class="form-promo__inner">
-					<h1 class="title title--form-promo">Бронирование</h1>
-					<p class="form-promo__description">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните<br> по телефону: <span class="form-promo__num-color">+7 812 777-55-88</span></p>
+			<div class="form__promo">
+				<div class="form__inner">
+					<h1 class="title title--form">Бронирование</h1>
+					<p class="form__description">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните<br> по телефону: <span class="form__num-color">+7 812 777-55-88</span></p>
 				</div>
 			</div>
-			<div class="form-date">
-				<div class="form-date__inner">
-					<p class="form-date__step">Шаг 1</p>
-					<h1 class="title  title--form-date">Дата отдыха</h1>	
-					<div class="form-date__period">
-						<div class="form-date__entry">
-							<p class="form-date__title">ДАТА ВЪЕЗДА</p>
-							<input type="number" size="2" name="number-entry" value="" placeholder="ДД">	
-							<input type="number" size="2" name="month-entry" value="" placeholder="ММ">
-							<input type="number" size="4" name="year-entry" value="" placeholder="ГГГГ">
+			<div class="form__date">
+				<div class="form__inner">
+					<p class="form__step">Шаг 1</p>
+					<h2 class="title  title--h2">Дата отдыха</h2>	
+					<div class="form__period">
+						<div class="form__entry">
+							<p class="form__title">ДАТА ВЪЕЗДА</p>
+							<div class="form__input">
+								<input class="form__date-month" type="number" size="2" name="number-entry" value="" placeholder="ДД">	
+								<input class="form__date-month" type="number" size="2" name="month-entry" value="" placeholder="ММ">
+								<input class="form__year" type="number" size="4" name="year-entry" value="" placeholder="ГГГГ">
+							</div>
 						</div>
-						<div class="form-date__exit">
-							<p class="form-date__title">ДАТА ВЫЕЗДА</p>
-							<input type="number" size="2" name="number-exit" placeholder="ДД">
-							<input type="number" size="2" name="month-exit" placeholder="ММ">
-							<input type="number" size="4" name="year-exit" placeholder="ГГГГ">
+						<div class="form__exit">
+							<p class="form__title">ДАТА ВЫЕЗДА</p>
+							<div class="form__input">
+								<input class="form__date-month" type="number" size="2" name="number-exit" placeholder="ДД">
+								<input class="form__date-month" type="number" size="2" name="month-exit" placeholder="ММ">
+								<input class="form__year" type="number" size="4" name="year-exit" placeholder="ГГГГ">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-<!-- 			<div class="form-place">
-				<div class="form-inner">
-					<p class="form-date__step">Шаг 2</p>
-					<h3 class="title  title--h3">Место проживания</h3>
-					<div class="form-place__list">
-						<div class="form-place__item">
+			<div class="form__place">
+				<div class="form__inner">
+					<p class="form__step">Шаг 2</p>
+					<h2 class="title  title--h2">Место проживания</h2>
+					<div class="form__list">
+						<div class="form__item">
 							<label for="hotel">ОТЕЛЬ</label>
-							<input type="checkbox" name="form-place__item" id="hotel" value="Отель">
+							<input type="radio" name="form-place__item" id="hotel" value="Отель">
 						</div>
-						<div class="form-place__item">
+						<div class="form__item">
 							<label for="cottage">КОТТЕДЖ</label>
-							<input type="checkbox" name="form-place__item" id="cottage" value="Коттедж" checked>
+							<input type="radio" name="form-place__item" id="cottage" value="Коттедж" checked>
 						</div>
 					</div>	
 				</div>
 			</div>
-			<div class="form-type">
-				<div class="form-inner">
-					<p class="form-date__step">Шаг 3</p>
-					<h3 class="title  title--h3">Тип коттеджа</h3>
-					<div class="form-type__menu">
-						<div class="form-type__menu-item">
-							<label for="flagman">ФЛАГМАН</label>
+			<div class="form__type">
+				<div class="form__inner">
+					<p class="form__step">Шаг 3</p>
+					<h2 class="title  title--h2">Тип коттеджа</h2>
+					<div class="form__menu">
+						<div class="form__menu-item">
+							<label class="form__active" for="flagman">ФЛАГМАН</label>
 							<input type="radio" name="cottage" id="flagman" value="Флагман" checked>
 							<label for="ozerniy">ОЗЁРНЫЙ</label>
 							<input type="radio" name="cottage" id="ozerniy" value="Озерный">
@@ -101,45 +105,45 @@
 							<input type="radio" name="cottage" id="portoviy" value="Портовый">
 						</div>
 					</div>
-					<div class="form-type__sub-menu">
-						<ul class="form-submenu__list-flagman">
-							<li class="form-submenu__item-flagman"></li>
-							<li class="form-submenu__item-flagman"></li>
-							<li class="form-submenu__item-flagman"></li>
-							<li class="form-submenu__item-flagman"></li>
-							<li class="form-submenu__item-flagman"></li>
+					<div class="form__sub-menu">
+						<ul class="form__list-flagman">
+							<li class="form__sub-menu-flagman">ПЛОЩАДЬ 100 М2</li>
+							<li class="form__sub-menu-flagman">3 КОМНАТЫ</li>
+							<li class="form__sub-menu-flagman">5 СПАЛЬНЫХ МЕСТ</li>
+							<li class="form__sub-menu-flagman">РАЗДЕЛЬНЫЙ САНУЗЕЛ</li>
+							<li class="form__sub-menu-flagman">WIFI</li>
 						</ul>
 					</div>
-					<div class="form-type__sub-menu">
-						<ul class="form-submenu__list-ozerniy">
-							<li class="form-submenu__item-ozerniy"></li>
-							<li class="form-submenu__item-ozerniy"></li>
-							<li class="form-submenu__item-ozerniy"></li>
-							<li class="form-submenu__item-ozerniy"></li>
-							<li class="form-submenu__item-ozerniy"></li>
+					<div class="form__sub-menu">
+						<ul class="form__list-ozerniy">
+							<li class="form__sub-menu-ozerniy"></li>
+							<li class="form__sub-menu-ozerniy"></li>
+							<li class="form__sub-menu-ozerniy"></li>
+							<li class="form__sub-menu-ozerniy"></li>
+							<li class="form__sub-menu-ozerniy"></li>
 						</ul>
 					</div>
-					<div class="form-type__sub-menu">
-						<ul class="form-submenu__list-olxovka">
-							<li class="form-submenu__item-olxovka"></li>
-							<li class="form-submenu__item-olxovka"></li>
-							<li class="form-submenu__item-olxovka"></li>
-							<li class="form-submenu__item-olxovka"></li>
-							<li class="form-submenu__item-olxovka"></li>
+					<div class="form__sub-menu">
+						<ul class="form__list-olxovka">
+							<li class="form__sub-menu-olxovka"></li>
+							<li class="form__sub-menu-olxovka"></li>
+							<li class="form__sub-menu-olxovka"></li>
+							<li class="form__sub-menu-olxovka"></li>
+							<li class="form__sub-menu-olxovka"></li>
 						</ul>
 					</div>
-					<div class="form-type__sub-menu">
-						<ul class="form-submenu__list-portoviy">
-							<li class="form-submenu__item-portoviy"></li>
-							<li class="form-submenu__item-portoviy"></li>
-							<li class="form-submenu__item-portoviy"></li>
-							<li class="form-submenu__item-portoviy"></li>
-							<li class="form-submenu__item-portoviy"></li>
+					<div class="form__sub-menu">
+						<ul class="form__list-portoviy">
+							<li class="form__sub-menu-portoviy"></li>
+							<li class="form__sub-menu-portoviy"></li>
+							<li class="form__sub-menu-portoviy"></li>
+							<li class="form__sub-menu-portoviy"></li>
+							<li class="form__sub-menu-portoviy"></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="form-information">
+<!-- 			<div class="form-information">
 				<div class="form__inner">
 					<p class="form-date__step">Шаг 4</p>
 					<h3 class="title  title--h3">Персональная информация</h3>
@@ -182,7 +186,7 @@
 							<div class="payment__cash">
 								<div class="payment__cart-info">
 									<div class="payment__cash-radio">
-									<!-- Ispravit ID kopiya stroki 179 -->
+									Ispravit ID kopiya stroki 179
 										<input type="radio" name="payment" id="cash">
 										<label for="cash">СЕЙЧАС</label>
 									</div>

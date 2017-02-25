@@ -1,0 +1,123 @@
+.form {
+
+	&__inner {
+		padding: 20px;
+		text-align: center;
+
+		.title--form {
+			padding: 40px 0 18px 0;
+			font-weight: @font-weight-regular;
+			font-size: @font-size-larger;
+		}
+	}
+
+	&__description {
+		padding: 18px 0;
+	}
+
+	&__num-color {
+		color: @primary-color;
+	}
+
+	&__date {
+		background-color: @gray-lightest;
+	}
+
+	&__step {
+		font-weight: @font-weight-medium;
+		color: @gray-light;
+	}
+
+	&__title {
+		font-size: @font-size-sm;
+		font-weight: @font-weight-regular;
+		color: @gray-dark;
+	}
+
+	&__input {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__date input {
+		padding: 20px;
+		border: 1px solid @gray-lighten;
+		font-family: @font-family-2;
+		font-weight: @font-weight-medium;
+		font-size: @font-size-sm;
+		color: @third-color; 
+	}
+
+	&__date-month {
+		width: 80px;
+	}
+
+	&__year {
+		width: 90px;
+	}
+
+	&__list {
+		display: flex;	
+		align-items: center;	
+		border: 1px solid @gray-lighten;
+	}
+
+	&__item {
+		flex-grow: 1;
+		background-image: url("@{pic}border.jpg");
+		background-position: right center;
+		background-repeat: no-repeat;
+	}
+
+	&__item:last-child {
+		background: none;
+	}
+
+	&__place label {
+
+		display: block;
+		font-size: @font-size-sm;
+		font-weight: @font-weight-regular;
+		color: @gray-dark;
+		cursor: pointer;
+	}
+
+	&__place input {
+		display: none;
+	}
+
+	&__type {
+		padding: 50px 0;
+		background-color: @gray-lightest;
+	}
+
+	&__menu {
+		background-color: #fff;
+		font-size: @font-size-sm;
+		font-weight: @font-weight-medium;
+		color: @gray-light;		
+	}
+
+	&__menu-item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__menu-item label {
+		padding: 14px;
+		cursor: pointer;	
+	}
+
+	&__menu-item label:hover {
+		color: @gray-darken;
+	}
+
+	&__active {
+		color: @gray-darken;
+	}
+
+	&__menu input {
+		display: none;
+
+	}
+}
