@@ -127,3 +127,179 @@ main {
 	</footer>
 </body>
 </html>
+
+
+
+/////////////////////////////////////////////////////////////////////////
+
+<!--	<div class="form">
+		<form action="#">
+			<div class="form__promo">
+				<div class="form__inner">
+					<h1 class="title title--form">Бронирование</h1>
+					<p class="form__description">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните<br> по телефону: <span class="form__num-color">+7 812 777-55-88</span></p>
+				</div>
+			</div>
+			<div class="form__date">
+				<div class="form__inner">
+					<p class="form__step">Шаг 1</p>
+					<h2 class="title  title--h2">Дата отдыха</h2>	
+					<div class="form__period">
+						<div class="form__entry">
+							<p class="form__title">ДАТА ВЪЕЗДА</p>
+							<div class="form__input">
+								<input class="form__date-month" type="number" size="2" name="number-entry" value="" placeholder="ДД">	
+								<input class="form__date-month" type="number" size="2" name="month-entry" value="" placeholder="ММ">
+								<input class="form__year" type="number" size="4" name="year-entry" value="" placeholder="ГГГГ">
+							</div>
+						</div>
+						<div class="form__exit">
+							<p class="form__title">ДАТА ВЫЕЗДА</p>
+							<div class="form__input">
+								<input class="form__date-month" type="number" size="2" name="number-exit" placeholder="ДД">
+								<input class="form__date-month" type="number" size="2" name="month-exit" placeholder="ММ">
+								<input class="form__year" type="number" size="4" name="year-exit" placeholder="ГГГГ">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form__place">
+				<div class="form__inner">
+					<p class="form__step">Шаг 2</p>
+					<h2 class="title  title--h2">Место проживания</h2>
+					<div class="form__list">
+						<div class="form__item">
+							<label for="hotel">ОТЕЛЬ</label>
+							<input type="radio" name="form-place__item" id="hotel" value="Отель">
+						</div>
+						<div class="form__item">
+							<label for="cottage">КОТТЕДЖ</label>
+							<input type="radio" name="form-place__item" id="cottage" value="Коттедж" checked>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="form__type">
+				<div class="form__inner">
+					<p class="form__step">Шаг 3</p>
+					<h2 class="title  title--h2">Тип коттеджа</h2>
+					<div class="form__menu">
+						<div class="form__menu-item">
+							<label class="form__active" for="flagman">ФЛАГМАН</label>
+							<input type="radio" name="cottage" id="flagman" value="Флагман" checked>
+							<label for="ozerniy">ОЗЁРНЫЙ</label>
+							<input type="radio" name="cottage" id="ozerniy" value="Озерный">
+							<label for="olxovka">ОЛЬХОВКА</label>
+							<input type="radio" name="cottage" id="olxovka" value="Ольховка">
+							<label for="portoviy">ПОРТОВЫЙ</label>
+							<input type="radio" name="cottage" id="portoviy" value="Портовый">
+						</div>
+					</div>
+					<div class="form__sub-menu">
+						<ul class="form__list-flagman">
+							<li class="form__sub-menu-flagman">ПЛОЩАДЬ 100 М2</li>
+							<li class="form__sub-menu-flagman">3 КОМНАТЫ</li>
+							<li class="form__sub-menu-flagman">5 СПАЛЬНЫХ МЕСТ</li>
+							<li class="form__sub-menu-flagman">РАЗДЕЛЬНЫЙ САНУЗЕЛ</li>
+							<li class="form__sub-menu-flagman">WIFI</li>
+						</ul>
+					</div>
+					<div class="form__sub-menu">
+						<ul class="form__list-ozerniy">
+							<li class="form__sub-menu-ozerniy"></li>
+							<li class="form__sub-menu-ozerniy"></li>
+							<li class="form__sub-menu-ozerniy"></li>
+							<li class="form__sub-menu-ozerniy"></li>
+							<li class="form__sub-menu-ozerniy"></li>
+						</ul>
+					</div>
+					<div class="form__sub-menu">
+						<ul class="form__list-olxovka">
+							<li class="form__sub-menu-olxovka"></li>
+							<li class="form__sub-menu-olxovka"></li>
+							<li class="form__sub-menu-olxovka"></li>
+							<li class="form__sub-menu-olxovka"></li>
+							<li class="form__sub-menu-olxovka"></li>
+						</ul>
+					</div>
+					<div class="form__sub-menu">
+						<ul class="form__list-portoviy">
+							<li class="form__sub-menu-portoviy"></li>
+							<li class="form__sub-menu-portoviy"></li>
+							<li class="form__sub-menu-portoviy"></li>
+							<li class="form__sub-menu-portoviy"></li>
+							<li class="form__sub-menu-portoviy"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+ 			<div class="form__information">
+				<div class="form__inner">
+					<p class="form__step">Шаг 4</p>
+					<h2 class="title  title--h2">Персональная информация</h2>
+					<div class="form__information-item">
+						<input class="form__information-input" type="text" placeholder="ИМЯ">
+					</div>
+					<div class="form__information-item">
+						<input class="form__information-input" type="text" placeholder="ФАМИЛИЯ">
+					</div>
+					<div class="form__information-item">
+						<input class="form__information-input" type="text" id="tel" placeholder="НОМЕР ТЕЛЕФОНА">
+						<label for="tel">Мы свяжемся с вами в случае необходимости</label>
+					</div>					
+					<div class="form__information-item">
+						<input class="form__information-input" type="text" id="email" placeholder="E-MAIL">
+						<label for="email">На этот адрес мы вышлем вам подтверждение о забронированном номере</label>
+					</div>					
+				</div>
+			</div>
+			<div class="form-payment">
+				<div class="form-inner">
+					<p class="form-date__step">Шаг 5</p>
+					<h3 class="title  title--h3">Способы оплаты</h3>
+					<div class="form-payment__list">
+						<div class="form-payment__info">
+							<div class="form-payment__info-inner">
+								<div class="form-payment__title">К ОПЛАТЕ</div>
+								<div class="form-payment__price">14 000 РУБ.</div>
+								<div class="form-payment__description"><i class="fa fa-exclamation-circle fa-1 fa-exclamation-circle-pos" aria-hidden="true"></i>Пожалуйста, <a class="form-payment__link" href="#" title="">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате.</div>
+							</div>
+						</div>
+						<div class="payment__cash">
+							<div class="payment__cash-radio">
+								<input type="radio" name="payment" id="cash">
+								<label for="cash">ПО ПРИЕЗДУ</label>
+							</div>
+							<div class="payment__cash-info">Вы можете произвести оплату по факту заселения</div>
+						</div>
+						<div class="payment-card">
+							<div class="payment__cash">
+								<div class="payment__cart-info">
+									<div class="payment__cash-radio">
+									Ispravit ID kopiya stroki 179
+										<input type="radio" name="payment" id="cash">
+										<label for="cash">СЕЙЧАС</label>
+									</div>
+									<div class="payment__cash-info">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</div>
+								</div>
+								<label for="num-cart">НОМЕР КАРТЫ</label>
+								<input type="text" id="num-cart" placeholder="0000-0000-0000-0000">
+
+								<label for="num-cvv">НОМЕР CVV</label>
+								<input type="text" id="num-cvv" placeholder="123">
+
+								<label for="fi">ФАМИЛИЯ ВЛАДЕЛЬЦА КАРТЫ</label>
+								<input type="text" id="fi" placeholder="VLADIMIR VLADIMIROV">
+
+								<label for="valid">ДЕЙСТВУЕТ ДО</label>
+								<input type="text" id="valid" placeholder="01 / 2018">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<input type="submit" value="ЗАБРОНИРОВАТЬ">
+ -->		</form>
+	</div>
+</div>
