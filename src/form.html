@@ -45,14 +45,14 @@
 		<form action="#">
 			<div class="form__promo">
 				<div class="form__inner">
-					<h1 class="title title--form">Бронирование</h1>
+					<h1 class="title title--form-promo">Бронирование</h1>
 					<p class="form__description">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните<br> по телефону: <span class="form__num-color">+7 812 777-55-88</span></p>
 				</div>
 			</div>
 			<div class="form__date">
 				<div class="form__inner">
 					<p class="form__step">Шаг 1</p>
-					<h2 class="title  title--h2">Дата отдыха</h2>	
+					<h2 class="title  title--h2 title--form-date">Дата отдыха</h2>	
 					<div class="form__period">
 						<div class="form__entry">
 							<p class="form__title">ДАТА ВЪЕЗДА</p>
@@ -76,7 +76,7 @@
 			<div class="form__place">
 				<div class="form__inner">
 					<p class="form__step">Шаг 2</p>
-					<h2 class="title  title--h2">Место проживания</h2>
+					<h2 class="title  title--h2  title--form-date">Место проживания</h2>
 					<div class="form__list">
 						<div class="form__item">
 							<label for="hotel">ОТЕЛЬ</label>
@@ -92,7 +92,7 @@
 			<div class="form__type">
 				<div class="form__inner">
 					<p class="form__step">Шаг 3</p>
-					<h2 class="title  title--h2">Тип коттеджа</h2>
+					<h2 class="title  title--h2 title--form-type">Тип коттеджа</h2>
 					<div class="form__menu">
 						<div class="form__menu-item">
 							<label class="form__active" for="flagman">ФЛАГМАН</label>
@@ -146,7 +146,7 @@
 			<div class="form__information">
 				<div class="form__inner">
 					<p class="form__step">Шаг 4</p>
-					<h2 class="title  title--h2">Персональная информация</h2>
+					<h2 class="title  title--h2  title--form-information">Персональная информация</h2>
 					<div class="form__information-item">
 						<input class="form__information-input" type="text" placeholder="ИМЯ">
 					</div>
@@ -166,7 +166,7 @@
 			<div class="form__payment">
 				<div class="form__payment-inner">
 					<p class="form__step">Шаг 5</p>
-					<h2 class="title  title--h2">Способы оплаты</h2>
+					<h2 class="title  title--h2  title--form-payment">Способы оплаты</h2>
 					<div class="form__payment-list">
 						<div class="form__cash">
 							<div class="form__radio">
@@ -183,20 +183,20 @@
 									</div>
 									<div class="form__card-description">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</div>
 								</div>
-								<div class="form__num-cart">
+								<div class="form__card-label  form__num-cart">
 									<label for="num-cart">НОМЕР КАРТЫ</label>
 									<input type="text" id="num-cart" placeholder="0000-0000-0000-0000">
 								</div>
-								<div class="form__fi">
+								<div class="form__card-label  form__fi">
 									<label for="fi">ФАМИЛИЯ ВЛАДЕЛЬЦА КАРТЫ</label>
 									<input type="text" id="fi" placeholder="VLADIMIR VLADIMIROV">
 								</div>
-								<div class="form__num-cvv">
+								<div class="form__card-label  form__num-cvv">
 									<label for="num-cvv">НОМЕР CVV</label>
 									<input type="text" id="num-cvv" placeholder="123">
 								</div>
 
-								<div class="form__valid">
+								<div class="form__card-label  form__valid">
 									<label for="valid">ДЕЙСТВУЕТ ДО</label>
 									<input type="text" id="valid" placeholder="01 / 2018">
 								</div>							
@@ -205,13 +205,17 @@
 							<div class="form__payment-info-inner">
 								<div class="form__payment-title">К ОПЛАТЕ</div>
 								<div class="form__payment-price">14 000 РУБ.</div>
-								<div class="form__payment-description"><i class="fa fa-exclamation-circle fa-1 fa-exclamation-circle-pos fa-color" aria-hidden="true"></i>Пожалуйста, <a class="form-payment__link" href="#" title="">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате.</div>
+								<div class="form__payment-description"><i class="fa fa-exclamation-circle fa-1 fa-exclamation-circle-pos fa-payment" aria-hidden="true"></i>Пожалуйста, <a class="form-payment__link" href="#" title="">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате.</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<input class="btn btn--turquoise btn--form" type="submit" value="ЗАБРОНИРОВАТЬ">
+			<div class="form__btn">
+				<div class="form__inner">
+					<input class="btn btn--turquoise btn--form" type="submit" value="ЗАБРОНИРОВАТЬ">
+				</div>
+			</div>
 		</form>
 	</div>
 </div>

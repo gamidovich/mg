@@ -1,18 +1,28 @@
 .form {
 
 	&__inner {
-		padding: 20px;
+		padding: 30px;
 		text-align: center;
+	}
 
-		.title--form {
-			padding: 40px 0 18px 0;
-			font-weight: @font-weight-regular;
-			font-size: @font-size-larger;
-		}
+	.title--form-promo {
+		font-family: @font-family-1;
+		font-size: @font-size-larger;
+		font-weight: @font-weight-regular;
+		padding: 0 0 8px 0;
+	}
+
+	.title--form-date {
+		padding: 2px 0 16px 0;
 	}
 
 	&__description {
-		padding: 18px 0;
+		padding: 7px 0 14px 0;
+
+		@media (min-width: 768px) {
+			width: 400px;
+			margin: 0 auto;
+		}
 	}
 
 	&__num-color {
@@ -20,23 +30,33 @@
 	}
 
 	&__date {
+		padding: 7px 0;
 		background-color: @gray-lightest;
 	}
 
 	&__step {
+		padding: 7px 0 0 0;
+		text-transform: uppercase;
 		font-weight: @font-weight-medium;
 		color: @gray-light;
 	}
 
 	&__title {
+		padding: 16px 0 7px 0;
 		font-size: @font-size-sm;
 		font-weight: @font-weight-regular;
 		color: @gray-dark;
+		text-transform: uppercase;
 	}
 
 	&__input {
 		display: flex;
 		justify-content: center;
+		padding: 7px 0 0 0;
+	}
+
+	&__input input {
+		outline: none;
 	}
 
 	&__date input {
@@ -56,9 +76,14 @@
 		width: 90px;
 	}
 
+	.title--form-date {
+		padding: 2px 0 14px 0;
+	}
+
 	&__list {
 		display: flex;	
-		align-items: center;	
+		align-items: center;
+		margin: 14px 0;	
 		border: 1px solid @gray-lighten;
 	}
 
@@ -67,6 +92,7 @@
 		background-image: url("@{pic}border.jpg");
 		background-position: right center;
 		background-repeat: no-repeat;
+		padding: 28px;
 	}
 
 	&__item:last-child {
@@ -87,8 +113,11 @@
 	}
 
 	&__type {
-		padding: 50px 0;
 		background-color: @gray-lightest;
+	}
+
+	.title--form-type {
+		padding: 3px 0 28px 0;
 	}
 
 	&__menu {
@@ -101,10 +130,11 @@
 	&__menu-item {
 		display: flex;
 		flex-direction: column;
+		padding: 20px 0;
 	}
 
 	&__menu-item label {
-		padding: 14px;
+		padding: 15px;
 		cursor: pointer;	
 	}
 
@@ -125,12 +155,17 @@
 		display: none;
 	}
 
+	.title--form-information {
+		padding: 3px 0 24px 0;
+	}
+
 	&__information-item {
 		text-align: left;
 	}
 
 	&__information-input {
 		width: 100%;
+		margin: 12px 0;
 	    padding: 15px 20px;
 		border: 1px solid @gray-lighten;
 		font-family: @font-family-2;
@@ -144,16 +179,37 @@
 
 	&__information-label,
 	&__payment-description {
+		text-align: left;
 		font-size: @font-size-sm;
 		color: @gray-dark;
 	}
 
 	&__payment {
+		padding-bottom: 15px;
+		text-align: center;
 		background-color: @gray-lightest;
+	}
+
+	.title--form-payment {
+		padding: 3px 0 12px 0;
+	}
+
+	&__payment-list {
+		padding: 12px 0 0 0;
 	}
 
 	&__radio input {
 		display: none;
+	}
+
+	&__payment-info {
+		padding: 12px 0 0 0;
+		background-color: @gray-lightest;
+	}
+
+	&__payment-info-inner {
+		padding: 30px;
+		background-color: #fff;
 	}
 
 	&__card label,
@@ -187,8 +243,19 @@
 	&__card,
 	&__cash {
 		margin: 10px 0;
-		padding: 26px 40px;
+		padding: 18px 40px;
+		border-top: 1px solid @gray-lighten;
+		border-bottom: 1px solid @gray-lighten;
 		background-color: #fff;
+	}
+
+	&__card-label {
+		text-align: left;
+	}
+
+
+	&__card-label label {
+		padding-bottom: 8px;
 	}
 
 	&__num-cvv,
@@ -209,7 +276,7 @@
 	}
 
 	&__card > div {
-		padding: 10px 0;
+		padding: 8px 0;
 	}
 
 	&__payment-price {
@@ -218,8 +285,14 @@
 		font-weight: @font-weight-medium;
 	}
 
-	.fa-color {
+	.fa-payment {
+		padding-right: 6px;
 		color: @seventh-color;
+	}
+
+	&__btn {
+		padding: 0 0 50px 0;
+		background-color: @gray-lightest;
 	}
 
 }
