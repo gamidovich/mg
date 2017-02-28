@@ -16,6 +16,47 @@
 		padding: 2px 0 16px 0;
 	}
 
+	&__period {
+
+		@media (min-width: 768px) {
+			display: flex;
+			justify-content: center;
+			margin-top: 10px;
+		}
+
+		@media (min-width: 1200px) {
+			width: 380px;
+			padding: 25px 0;
+			background-color: @white;
+		}
+	}
+
+	&__period > div { 
+
+		@media (min-width: 768px) {
+			padding: 10px;
+		}
+
+		@media (min-width: 1200px) {
+			flex-grow: 1;
+			border-right: 1px solid @gray-lighten;
+		}
+	}
+
+	&__period > div:last-child {
+
+		@media (min-width: 1200px) {
+			border: none;
+		}
+	}
+
+	&__period p {
+
+		@media (min-width: 1200px) {
+			padding-top: 0;
+		}
+ 	}
+
 	&__description {
 		padding: 7px 0 14px 0;
 
@@ -32,6 +73,22 @@
 	&__date {
 		padding: 7px 0;
 		background-color: @gray-lightest;
+	}
+
+	&__date-inner {
+		padding: 30px;
+		text-align: center;
+
+
+		@media (min-width: 768px) {
+			width: 530px;
+			margin: 0 auto;
+			padding: 30px 0;
+		}
+
+		@media (min-width: 1200px) {
+			width: 380px;
+		}
 	}
 
 	&__step {
@@ -60,20 +117,32 @@
 	}
 
 	&__date input {
-		padding: 20px;
+		padding: 18px;
 		border: 1px solid @gray-lighten;
 		font-family: @font-family-2;
 		font-weight: @font-weight-medium;
 		font-size: @font-size-sm;
 		color: @third-color; 
+
+		@media (min-width: 1200px) {
+			padding: 8px;
+		} 
 	}
 
 	&__date-month {
 		width: 80px;
+
+		@media (min-width: 1200px) {
+			width: 40px;
+		}
 	}
 
 	&__year {
 		width: 90px;
+
+		@media (min-width: 1200px) {
+			width: 50px;
+		}
 	}
 
 	.title--form-date {
