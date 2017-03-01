@@ -74,23 +74,23 @@
 				</div>
 			</div>
 			<div class="form__place">
-				<div class="form__inner">
+				<div class="form__place-inner">
 					<p class="form__step">Шаг 2</p>
 					<h2 class="title  title--h2  title--form-date">Место проживания</h2>
 					<div class="form__list">
 						<div class="form__item">
-							<label for="hotel">ОТЕЛЬ</label>
+							<label class="form__label-hotel  sprite-home" for="hotel">ОТЕЛЬ</label>
 							<input type="radio" name="form-place__item" id="hotel" value="Отель">
 						</div>
 						<div class="form__item">
-							<label for="cottage">КОТТЕДЖ</label>
+							<label class="form__label-cottage sprite-cottage" for="cottage">КОТТЕДЖ</label>
 							<input type="radio" name="form-place__item" id="cottage" value="Коттедж" checked>
 						</div>
 					</div>	
 				</div>
 			</div>
 			<div class="form__type">
-				<div class="form__inner">
+				<div class="form__type-inner">
 					<p class="form__step">Шаг 3</p>
 					<h2 class="title  title--h2 title--form-type">Тип коттеджа</h2>
 					<div class="form__menu">
@@ -105,17 +105,17 @@
 							<input type="radio" name="cottage" id="portoviy" value="Портовый">
 						</div>
 					</div>
-					<div class="form__sub-menu">
-						<ul class="form__list-flagman">
-							<li class="form__sub-menu-flagman">ПЛОЩАДЬ 100 М2</li>
-							<li class="form__sub-menu-flagman">3 КОМНАТЫ</li>
-							<li class="form__sub-menu-flagman">5 СПАЛЬНЫХ МЕСТ</li>
-							<li class="form__sub-menu-flagman">РАЗДЕЛЬНЫЙ САНУЗЕЛ</li>
-							<li class="form__sub-menu-flagman">WIFI</li>
+					<div class="form__sub-menu  form__menu-open">
+						<ul class="form__sub-menu-list  form__list-flagman">
+							<li class="form__sub-menu-flagman"><i class="sprite sprite-area"></i>ПЛОЩАДЬ 100 М2</li>
+							<li class="form__sub-menu-flagman"><i class="sprite sprite-room"></i>3 КОМНАТЫ</li>
+							<li class="form__sub-menu-flagman"><i class="sprite sprite-bed"></i>5 СПАЛЬНЫХ МЕСТ</li>
+							<li class="form__sub-menu-flagman"><i class="sprite sprite-wc"></i>РАЗДЕЛЬНЫЙ САНУЗЕЛ</li>
+							<li class="form__sub-menu-flagman"><i class="sprite sprite-wifi"></i>WIFI</li>
 						</ul>
 					</div>
-					<div class="form__sub-menu">
-						<ul class="form__list-ozerniy">
+					<div class="form__sub-menu  form__menu-close">
+						<ul class="form__sub-menu-list  form__list-ozerniy">
 							<li class="form__sub-menu-ozerniy"></li>
 							<li class="form__sub-menu-ozerniy"></li>
 							<li class="form__sub-menu-ozerniy"></li>
@@ -123,8 +123,8 @@
 							<li class="form__sub-menu-ozerniy"></li>
 						</ul>
 					</div>
-					<div class="form__sub-menu">
-						<ul class="form__list-olxovka">
+					<div class="form__sub-menu  form__menu-close">
+						<ul class="form__sub-menu-list  form__list-olxovka">
 							<li class="form__sub-menu-olxovka"></li>
 							<li class="form__sub-menu-olxovka"></li>
 							<li class="form__sub-menu-olxovka"></li>
@@ -132,8 +132,8 @@
 							<li class="form__sub-menu-olxovka"></li>
 						</ul>
 					</div>
-					<div class="form__sub-menu">
-						<ul class="form__list-portoviy">
+					<div class="form__sub-menu  form__menu-close">
+						<ul class="form__sub-menu-list  form__list-portoviy">
 							<li class="form__sub-menu-portoviy"></li>
 							<li class="form__sub-menu-portoviy"></li>
 							<li class="form__sub-menu-portoviy"></li>

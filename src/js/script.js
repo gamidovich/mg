@@ -84,9 +84,6 @@ $('.single-room__gallery').slick({
         arrows: false
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 
@@ -119,9 +116,6 @@ $('.single-categories__list').slick({
       breakpoint: 321,
       settings: "unslick"
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 
